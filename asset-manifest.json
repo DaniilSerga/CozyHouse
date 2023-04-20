@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CozyHouse/static/css/main.8eed0ad2.css",
+    "main.js": "/CozyHouse/static/js/main.87ab3fea.js",
+    "static/js/787.cb60dd18.chunk.js": "/CozyHouse/static/js/787.cb60dd18.chunk.js",
+    "index.html": "/CozyHouse/index.html",
+    "main.8eed0ad2.css.map": "/CozyHouse/static/css/main.8eed0ad2.css.map",
+    "main.87ab3fea.js.map": "/CozyHouse/static/js/main.87ab3fea.js.map",
+    "787.cb60dd18.chunk.js.map": "/CozyHouse/static/js/787.cb60dd18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8eed0ad2.css",
+    "static/js/main.87ab3fea.js"
+  ]
+}
