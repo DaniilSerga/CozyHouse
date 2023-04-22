@@ -1,18 +1,14 @@
 import classes from './App.module.css'
+import AboutSection from './components/AboutSection/AboutSection';
+import PetsSection from './components/PetsSection/PetsSection';
 import StartScreen from './components/StartScreen/StartScreen';
 
 const App = () => {
   return (
     <div className={classes.App}>
         <StartScreen/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
+        <AboutSection/>
+        <PetsSection/>
     </div>
   );
 }

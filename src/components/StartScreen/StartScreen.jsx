@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './StartScreen.module.css';
 import Header from '../Header/Header';
-import puppy from '../../assets/images/puppy.png';
+import puppy from '../../assets/images/startPagePuppy.webp';
 
 const StartScreen = () => {
     return(

@@ -1,0 +1,77 @@
+.petsSection {
+    height: 100%;
+    padding: 0 20px;
+    background-color: #f6f6f6;
+}
+
+.header {
+    margin-top: 80px;
+}
+
+.header > h3 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.sliderSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.slider {
+    display: flex;
+    list-style-type: none;
+    gap: 90px;
+    justify-content: center;
+}
+
+.listItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.listItemContainer > img {
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.listItemContainer > p {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.listItemContainer > button {
+    margin: 0 42px;
+    padding: 15px 45px;
+    font-family: Georgia;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #292929;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.sliderSection > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+}
