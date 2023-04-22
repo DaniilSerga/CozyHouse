@@ -1,0 +1,28 @@
+.headerContainer {
+    margin: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.title {
+    margin: 0;
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.subtitle {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}

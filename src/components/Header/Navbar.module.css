@@ -1,0 +1,33 @@
+.navbarContainer {
+    position: relative;
+    height: auto;
+}
+
+.navMenu {
+    height: 100%;
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+}
+
+.linkContainer {
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.linkContainer > a {
+    color: #cdcdcd;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+li:hover > .linkContainer {
+    border-bottom: 3px solid #f1cdb3;
+    transition: 0.3s;
+}
+
+li:hover > .linkContainer > a {
+    color: #fafafa;
+    transition: 0.3s;
+}

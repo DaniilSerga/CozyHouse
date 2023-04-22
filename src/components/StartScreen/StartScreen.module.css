@@ -1,0 +1,54 @@
+.startScreenContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/background/backgroundGrid.png');
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
+.contentContainer {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 42px
+}
+
+.content {
+    max-width: 460px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.content > h3 {
+    max-width: 310px;
+    text-align: left;
+    color: #fff;
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57px;
+}
+
+.content > p {
+    color: #cdcdcd;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.content > button {
+    padding: 15px 45px;
+    border-width: 0;
+    border-radius: 100px;
+    background-color: #f1cdb3;
+    font-size: 17px;
+    font-family: Georgia;
+}
+
+.content > button:hover {
+    background-color: #fddcc4;
+    transition: 0.3s;
+}
