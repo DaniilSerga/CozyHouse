@@ -4,11 +4,12 @@
     padding: 80px 40px 100px 40px;
 }
 
-.sectionTitle {
+.title {
     font-family: Georgia;
     font-weight: 400;
     font-size: 35px;
     line-height: 45px;
+    letter-spacing: 0.06em;
     color: #545454;
 }
 

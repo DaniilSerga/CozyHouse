@@ -18,12 +18,13 @@
 }
 
 .content > h3 {
-    color: #545454;
     text-align: left;
     font-family: Georgia;
     font-size: 35px;
     font-weight: 400;
     line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: #545454;
 }
 
 .content > p {

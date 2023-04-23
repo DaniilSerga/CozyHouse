@@ -1,0 +1,62 @@
+.footerContainer {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-image: url('../../assets/background/footer-background.svg');
+    background-size: 100% auto;
+}
+
+.title {
+    text-align: left;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.descriptionText {
+    text-align: left;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #f1cdb3;
+}
+
+.contactsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.locationsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 34px;
+    margin-bottom: 60px;
+}
+
+.mailContainer,
+.phoneContainer,
+.locationContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

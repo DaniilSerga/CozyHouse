@@ -5,7 +5,7 @@ import helpList from '../../constants/helpList';
 const HelpSection = () => {
     return (
         <div className={classes.helpSectionContainer}>
-            <h3 className={classes.sectionTitle}>How you can help<br/>our shelter</h3>
+            <h3 className={classes.title}>How you can help<br/>our shelter</h3>
 
             <div className={classes.helpList}>
                 {
