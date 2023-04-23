@@ -33,21 +33,17 @@
 
 .listItemContainer {
     display: flex;
-    align-items: center;
+    width: fit-content;
     flex-direction: column;
     gap: 30px;
     padding-bottom: 30px;
+    border-radius: 9px;
     background-color: #fafafa;
 }
 
 .listItemContainer:hover {
     background-color:#fff;
     transition: 0.3s;
-}
-
-.listItemContainer > img {
-    max-width: 270px;
-    max-height: 270px;
 }
 
 .listItemContainer > p {
@@ -79,6 +75,7 @@
 }
 
 .sliderSection > button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +86,6 @@
 }
 
 .sliderSection > button:hover {
-    cursor: pointer;
     border-color: transparent;
     background-color: #FDDCC4;
     transition: 0.3s;
