@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './PetsSection.module.css';
 import petsList from '../../constants/petsList';
-import rightArrow from '../../assets/icons/rightArrow.png';
 
 const PetsSection = () => {
     return(
@@ -30,6 +29,7 @@ const PetsSection = () => {
                     &rarr;
                 </button>
             </div>
+            <button className={classes.footerButton}>Get to know the rest</button>
         </div>
     )
 }
