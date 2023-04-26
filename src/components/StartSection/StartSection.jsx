@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './StartScreen.module.css';
+import classes from './StartSection.module.css';
 import Header from '../Header/Header';
 import puppy from '../../assets/images/startPagePuppy.webp';
 
-const StartScreen = () => {
+const StartPage = () => {
     return(
         <div className={classes.startScreenContainer}>
             <Header/>
@@ -19,4 +19,4 @@ const StartScreen = () => {
     )
 }
 
-export default StartScreen;
+export default StartPage;

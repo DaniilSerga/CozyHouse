@@ -1,0 +1,73 @@
+.sliderContainer {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slickSlider {
+    width: 90%;
+}
+
+.slick-track {
+    /* gap: 90px; */
+}
+.listItemContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-radius: 9px;
+    background-color: #fafafa;
+}
+
+.listItemContainer:hover {
+    background-color:#fff;
+    transition: 0.3s;
+}
+
+.listItemContainer > p {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.learnMoreButton {
+    cursor: pointer;
+    margin: 0 42px;
+    padding: 15px 45px;
+    font-family: Georgia;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #292929;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.learnMoreButton:hover {
+    border-color: transparent;
+    background-color: #fddcc4;
+    transition: 0.3s;
+}
+
+.prevButton,
+.nextButton {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+    overflow: hidden;
+}

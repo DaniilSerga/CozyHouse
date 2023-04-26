@@ -4,7 +4,7 @@
     align-items: center;
     gap: 60px;
     height: 100%;
-    padding: 80px 20px 100px 20px;
+    padding: 80px 40px 100px 40px;
     background-color: #f6f6f6;
 }
 
@@ -20,75 +20,8 @@
 .sliderSection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-}
-
-.slider {
-    display: flex;
-    list-style-type: none;
-    gap: 90px;
-    justify-content: center;
-}
-
-.listItemContainer {
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 30px;
-    border-radius: 9px;
-    background-color: #fafafa;
-}
-
-.listItemContainer:hover {
-    background-color:#fff;
-    transition: 0.3s;
-}
-
-.listItemContainer > p {
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #545454;
-}
-
-.learnMoreButton {
-    cursor: pointer;
-    margin: 0 42px;
-    padding: 15px 45px;
-    font-family: Georgia;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 17px;
-    color: #292929;
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    background-color: transparent;
-}
-
-.learnMoreButton:hover {
-    border-color: transparent;
-    background-color: #fddcc4;
-    transition: 0.3s;
-}
-
-.sliderSection > button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 19px;
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    background-color: transparent;
-}
-
-.sliderSection > button:hover {
-    border-color: transparent;
-    background-color: #FDDCC4;
-    transition: 0.3s;
 }
 
 .footerButton {

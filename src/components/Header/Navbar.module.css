@@ -22,9 +22,9 @@
     text-decoration: none;
 }
 
-li:hover > .linkContainer {
+.activeLinkContainer {
+    padding: 10px;
     border-bottom: 3px solid #f1cdb3;
-    transition: 0.3s;
 }
 
 li:hover > .linkContainer > a {

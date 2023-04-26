@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './PetsSection.module.css';
 import petsList from '../../constants/petsList';
+import Carousel from './Carousel';
 
 const PetsSection = () => {
     return(
@@ -9,25 +10,9 @@ const PetsSection = () => {
                 <h3>Our friends who <br/> are looking for a house</h3>
             </div>
             <div className={classes.sliderSection}>
-                <button className={classes.perviousPetButton}>
-                    &larr;
-                </button>
-                <ul className={classes.slider}>
-                    {
-                        petsList.map(pet => {
-                            return (
-                                <li className={classes.listItemContainer}>
-                                    <img src={pet.img} alt='pet'/>
-                                    <p>{pet.name}</p>
-                                    <button className={classes.learnMoreButton}>Learn more</button>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-                <button className={classes.nextPetButton}>
-                    &rarr;
-                </button>
+                { petsList &&
+                    <Carousel petsList={petsList}></Carousel>
+                }
             </div>
             <button className={classes.footerButton}>Get to know the rest</button>
         </div>
