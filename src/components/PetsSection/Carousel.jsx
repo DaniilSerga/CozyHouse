@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React from 'react';
 import classes from './Carousel.module.css';
-import petsList from '../../constants/petsList';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -63,30 +62,6 @@ const Carousel = ({petsList}) => {
             <button className={classes.nextButton} onClick={() => slider?.current?.slickNext()}>&rarr;</button>
         </div>
     )
-}
-
-const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <button
-        className={classes.nextButton}
-        onClick={onClick}
-      >
-        &rarr;
-      </button>
-    );
-  }
-  
-const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <button
-      className={classes.prevButton}
-      onClick={onClick}
-    >
-        &larr;
-    </button>
-  );
 }
 
 export default Carousel;

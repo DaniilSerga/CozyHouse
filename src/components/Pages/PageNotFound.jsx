@@ -8,7 +8,7 @@ const PageNotFound = () => {
         <div className={classes.pageContainer}>
             <img src={dogPicture} alt='error page'/>
             <h3 className={classes.header}>Oops, something went wrong</h3>
-            <Link className={classes.link} to={'/'}>Go back</Link>
+            <Link className={classes.link} to={'/CozyHouse/home'}>Go back</Link>
         </div>
     )
 }

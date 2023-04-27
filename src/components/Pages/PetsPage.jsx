@@ -1,14 +1,17 @@
 import React from 'react';
 import classes from './PetsPage.module.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import PetsPageCarousel from '../PetsSection/PetsPageCarousel';
 
 const PetsPage = () => {
     return (
         <div className={classes.petsPageContainer}>
-            <div className={classes.content}>
             <Header/>
-                <h1>Under construction</h1>
+            <div className={classes.content}>
+                <PetsPageCarousel/>
             </div>
+            <Footer/>
         </div>
     )
 }

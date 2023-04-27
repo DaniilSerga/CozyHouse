@@ -1,4 +1,4 @@
-.navbarContainer {
+.navbarContainerDark {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -6,15 +6,26 @@
     gap: 35px;
 }
 
-.linkContainer {
-    padding: 10px;
-    border-bottom: 3px solid transparent;
+.navbarContainerDark > a {
+    color: #cdcdcd;
 }
+
+/* TODO Changing theme depending on an opened page */
+/* .navbarContainerLight {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbarContainerLight {
+    color: #545454;
+} */
 
 .link {
     margin-top: 10px;
     padding-bottom: 10px;
-    color: #cdcdcd;
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
@@ -24,7 +35,6 @@
 .activeLink {
     margin-top: 10px;
     padding-bottom: 10px;
-    color: #cdcdcd;
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;

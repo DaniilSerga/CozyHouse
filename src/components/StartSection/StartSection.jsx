@@ -3,7 +3,7 @@ import classes from './StartSection.module.css';
 import Header from '../Header/Header';
 import puppy from '../../assets/images/startPagePuppy.webp';
 
-const StartPage = () => {
+const StartSection = () => {
     return(
         <div className={classes.startScreenContainer}>
             <Header/>
@@ -19,4 +19,4 @@ const StartPage = () => {
     )
 }
 
-export default StartPage;
+export default StartSection;

@@ -1,5 +1,5 @@
 .headerContainer {
-    margin: 60px 20px;
+    margin: 60px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@
     text-align: left;
 }
 
-.title {
+.titleDark {
     margin: 0;
     color: #F1CDB3;
     font-family: Georgia;
@@ -21,7 +21,17 @@
     letter-spacing: 1px;
 }
 
-.subtitle {
+/* TODO Changing theme depending on an opened page */
+/* .titleLight {
+    margin: 0;
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
+} */
+
+.subtitleDark {
     margin: 0;
     font-family: 'Arial';
     font-style: normal;
@@ -30,3 +40,14 @@
     letter-spacing: 1.3px;
     color: #fff;
 }
+
+/* TODO Changing theme depending on an opened page */
+/* .subtitleLight {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #292929;
+} */
