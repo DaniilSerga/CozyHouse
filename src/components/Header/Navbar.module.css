@@ -10,19 +10,6 @@
     color: #cdcdcd;
 }
 
-/* TODO Changing theme depending on an opened page */
-/* .navbarContainerLight {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
-}
-
-.navbarContainerLight {
-    color: #545454;
-} */
-
 .link {
     margin-top: 10px;
     padding-bottom: 10px;

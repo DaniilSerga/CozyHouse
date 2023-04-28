@@ -2,14 +2,14 @@ import React from 'react';
 import classes from './Header.module.css';
 import Navbar from './Navbar';
 
-const Header = (isLightMode) => {
+const Header = ({lightStyles}) => {
     return (
         <div className={classes.headerContainer}>
             <div className={classes.titleContainer}>
-                <h1 className={classes.titleDark}>Cozy House</h1>
-                <h2 className={classes.subtitleDark}>Shelter for pets in Boston</h2>
+                <h1 className={lightStyles ? lightStyles.titleLight : classes.titleDark}>Cozy House</h1>
+                <h2 className={lightStyles ? lightStyles.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h2>
             </div>
-            <Navbar/>
+            <Navbar lightStyles={lightStyles}/>
         </div>
     )
 }

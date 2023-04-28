@@ -21,16 +21,6 @@
     letter-spacing: 1px;
 }
 
-/* TODO Changing theme depending on an opened page */
-/* .titleLight {
-    margin: 0;
-    color: #545454;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 32px;
-    letter-spacing: 1px;
-} */
-
 .subtitleDark {
     margin: 0;
     font-family: 'Arial';
@@ -40,14 +30,3 @@
     letter-spacing: 1.3px;
     color: #fff;
 }
-
-/* TODO Changing theme depending on an opened page */
-/* .subtitleLight {
-    margin: 0;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    letter-spacing: 1.3px;
-    color: #292929;
-} */
