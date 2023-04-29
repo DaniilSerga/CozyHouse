@@ -3,6 +3,7 @@ import classes from './Carousel.module.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import PetCard from '../Cards/PetCard';
 
 const Carousel = ({petsList}) => {
     const slider = React.useRef(null);
@@ -48,13 +49,11 @@ const Carousel = ({petsList}) => {
                 {
                     petsList.map(pet => {
                         return (
-                          <div className={classes.listItemWrapper}>
-                            <div className={classes.listItemContainer}>
-                                <img src={pet.img} alt='pet'/>
-                                <p>{pet.name}</p>
-                                <button className={classes.learnMoreButton}>Learn more</button>
+                          <>
+                            <div className={classes.listItemWrapper}>
+                              <PetCard pet={pet}/>
                             </div>
-                          </div>
+                          </>
                         )
                     })
                 }

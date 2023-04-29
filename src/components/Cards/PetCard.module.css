@@ -1,56 +1,21 @@
-.carouselSectionContainer {
+.cardContainer {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 60px;
-    padding: 80px 40px 100px;
-    background-color: #f6f6f6;
-}
-
-.carouselContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-ul {
-    justify-content: center;
-}
-
-.title {
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-    color: #545454;
-}
-
-.cardsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.listItemContainer {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: fit-content;
     flex-direction: column;
     gap: 30px;
+    max-width: 270px;
+    max-height: 435px;
     padding-bottom: 30px;
     border-radius: 9px;
     background-color: #fafafa;
 }
 
-.listItemContainer:hover {
+.cardContainer:hover {
     background-color:#fff;
     transition: 0.3s;
 }
 
-.listItemContainer > p {
+.cardContainer > p {
     font-family: Georgia;
     font-weight: 400;
     font-size: 20px;
