@@ -7,7 +7,7 @@ import PetsPageCarousel from '../PetsSection/PetsPageCarousel';
 const PetsPage = () => {
     return (
         <div className={classes.petsPageContainer}>
-            <Header lightStyles={classes}/>
+            <Header lightStyles={true}/>
             <div className={classes.content}>
                 <PetsPageCarousel/>
             </div>

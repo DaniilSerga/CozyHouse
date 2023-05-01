@@ -77,3 +77,20 @@ ul {
     background-color: #fddcc4;
     transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+    .carouselSectionContainer {
+        padding: 60px 30px 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    .carouselSectionContainer {
+        padding: 42px 10px;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}

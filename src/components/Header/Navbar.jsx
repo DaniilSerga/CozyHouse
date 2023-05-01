@@ -9,13 +9,13 @@ const Navbar = ({lightStyles, menuActive}) => {
         if (menuActive) {
             setStyle(
                 lightStyles ? 
-                [lightStyles.navbarContainerLight, classes.menuMobile].join(' ') :
-                [classes.navbarContainerDark, classes.menuMobile].join(' ')
+                [classes.navbarContainerLight, classes.menuMobileLight].join(' ') :
+                [classes.navbarContainerDark, classes.menuMobileDark].join(' ')
             )
         } else {
             setStyle(
                 lightStyles ?
-                    lightStyles.navbarContainerLight :
+                    classes.navbarContainerLight :
                     classes.navbarContainerDark
             )
         }

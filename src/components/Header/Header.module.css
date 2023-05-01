@@ -44,11 +44,32 @@
     width: 30px;
     height: 30px;
 }
+
+.titleLight {
+    margin: 0;
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.subtitleLight {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #292929;
+}
+
 @media (max-width: 320px) {
     .headerContainer {
         position: relative;
-        margin: 30px 10px 0;
+        margin: 30px 10px;
     }
+
     .menuButtonSection {
         width: 30px;
         height: fit-content;

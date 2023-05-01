@@ -6,7 +6,7 @@ import PetCard from '../Cards/PetCard';
 
 const PetsPageCarousel = () => {
     const getItemsPerPage = (width) => {
-        if (width >= 1200) {
+        if (width >= 1280) {
             return 8;
         } else if (width >= 900) {
             return 6;

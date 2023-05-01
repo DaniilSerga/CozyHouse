@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import classes from './Header.module.css';
 import Navbar from './Navbar';
-import burger from '../../assets/icons/burgerIcon.svg';
-import cross from '../../assets/icons/closeIcon.svg';
+import burgerDark from '../../assets/icons/burgerIconDark.svg';
+import burgerLight from '../../assets/icons/burgerIcon.svg';
+import crossDark  from '../../assets/icons/closeIconDark.svg'
+import crossLight from '../../assets/icons/closeIconLight.svg'
 
 const Header = ({lightStyles}) => {
     const [menuActive, showMenu] = useState(false);
@@ -10,14 +12,14 @@ const Header = ({lightStyles}) => {
     return (
         <div className={classes.headerContainer}>
             <div className={classes.titleContainer}>
-                <h1 className={lightStyles ? lightStyles.titleLight : classes.titleDark}>Cozy House</h1>
-                <h2 className={lightStyles ? lightStyles.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h2>
+                <h1 className={lightStyles ? classes.titleLight : classes.titleDark}>Cozy House</h1>
+                <h2 className={lightStyles ? classes.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h2>
             </div>
             <Navbar menuActive={menuActive} lightStyles={lightStyles}/>
             <div onClick={() => showMenu(!menuActive)} className={classes.menuButtonSection}>
                 { menuActive ?
-                    <img className={classes.closeImg} src={cross} alt='close menu'/> :
-                    <img src={burger} alt='menu'/>
+                    <img className={classes.closeImg} src={lightStyles ? crossDark : crossLight} alt='close menu'/> :
+                    <img src={lightStyles ? burgerDark : burgerLight} alt='menu'/>
                 }
             </div>
         </div>
