@@ -28,3 +28,23 @@
     background-color: transparent;
     overflow: hidden;
 }
+
+@media (max-width: 320px) {
+    .sliderContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 80px;
+    }
+
+    .slickSlider {
+        width: 100%;
+    }
+
+    .prevButton {
+        order: 2; 
+    }
+
+    .nextButton {
+        order: 3;
+    }
+}

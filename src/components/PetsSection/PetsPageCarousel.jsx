@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import classes from './PetsPageCarousel.module.css';
 import petsList from '../../constants/petsList';
-import Slider from 'react-slick';
-import { Pagination, PaginationItem } from '@mui/material';
+import { Pagination } from '@mui/material';
 import PetCard from '../Cards/PetCard';
 
 const PetsPageCarousel = () => {
+    const getItemsPerPage = (width) => {
+        if (width >= 1200) {
+            return 8;
+        } else if (width >= 900) {
+            return 6;
+        } else {
+            return 3;
+        }
+    }
+
     const [pagesAmn, setPagesAmn] = useState(0);
     const [page, setPage] = useState(1);
     const [pets, setPets] = useState([]);
-    const [itemsPerPage, setItemsPerPage] = useState(2);
+    const [itemsPerPage, setItemsPerPage] = useState(
+        getItemsPerPage(window.innerWidth)
+    );
 
     // TODO Refactoring and optimization required
     useEffect(() => {
@@ -33,16 +44,6 @@ const PetsPageCarousel = () => {
         const end = start + itemsPerPage;
 
         return petsList.slice(start, end);
-    }
-
-    const getItemsPerPage = (width) => {
-        if (width >= 1200) {
-            return 8;
-        } else if (width >= 900) {
-            return 6;
-        } else {
-            return 3;
-        }
     }
 
     return (

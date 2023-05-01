@@ -46,11 +46,12 @@
     border-radius: 9px;
 }
 
-.creditCard > p {
+.creditCard > h5 {
     font-family: Georgia;
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0.06em;
     color: #545454;
 }
 
@@ -60,4 +61,71 @@
     font-size: 12px;
     line-height: 18px;
     color: #b2b2b2;
+}
+
+@media (max-width: 768px) {
+    .donationSectionContainer {
+        padding: 80px 60px 100px;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .contentContainer > img {
+        order: 2;
+    }
+}
+
+@media (max-width: 320px) {
+    .donationSectionContainer {
+        padding: 42px 10px;
+    }
+
+    .content {
+        align-items: center;
+    }
+
+    .contentContainer {
+        gap: 42px;
+    }
+    
+    .header {
+        text-align: center;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .subHeader {
+        text-align: center;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .creditCard {
+        padding: 13px 15px;
+    }
+
+    .creditCard > h5 {
+        font-size: 15px;
+    }
+
+    .legalInfo {
+        margin-left: 10px;
+    }
+
+    .imageContainer {
+        order: 2;
+        margin: 0 20px;
+    }
+    .imageContainer > img {
+        max-width: 100%;
+        height: auto;
+    }
 }

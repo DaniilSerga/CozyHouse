@@ -1,15 +1,17 @@
 .startScreenContainer {
     height: 100%;
     width: 100%;
-    background-image: url('../../assets/background/backgroundGrid.png');
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
 
+.contentWrapper {
+    background-image: url('../../assets/background/backgroundGrid.png');
+}
+
 .contentContainer {
-    margin: 0 40px;
     display: flex;
+    padding: 0 40px;
     justify-content: space-between;
-    align-items: center;
     margin-top: 60px;
     gap: 42px;
     animation: fadeIn 1s;
@@ -24,12 +26,20 @@
     }
 }
 
+.contentWrapper > img {
+    align-self: flex-end;
+    max-width: 100%;
+    height: auto;
+}
+
 .content {
     max-width: 460px;
     display: flex;
+    align-self: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 42px;
+    margin-bottom: 60px;
 }
 
 .content > h3 {
@@ -63,4 +73,61 @@
 .content > button:hover {
     background-color: #fddcc4;
     transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .contentContainer {
+        position: relative;
+        margin: 0 100px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .content > button {
+        align-self: center;
+    }
+
+    .contentContainer {
+        position: relative;
+    }
+
+    /* Size is not equal to the provided in design */
+    .contentContainer > img {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    .startScreenContainer {
+
+    }
+    .contentContainer {
+        margin: 0;
+        padding: 60px 10px 0;
+        gap: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 42px;
+        margin: 0;
+    }
+
+    .content > h3 {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .content > p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contentContainer > img {
+        margin: 0;
+        margin-left: 40px;
+        margin-top: 105px;
+    }
 }

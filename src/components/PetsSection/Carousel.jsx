@@ -17,7 +17,7 @@ const Carousel = ({petsList}) => {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 1200,
+            breakpoint: 1280,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -25,7 +25,7 @@ const Carousel = ({petsList}) => {
             }
           },
           {
-            breakpoint: 1120,
+            breakpoint: 1060,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -33,7 +33,7 @@ const Carousel = ({petsList}) => {
             }
           },
           {
-            breakpoint: 800,
+            breakpoint: 720,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1

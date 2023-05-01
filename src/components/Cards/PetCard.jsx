@@ -6,7 +6,9 @@ const PetCard = ({pet}) => {
         <div className={classes.cardContainer}>
             <img src={pet.img} alt='pet'/>
             <p>{pet.name}</p>
-            <button className={classes.learnMoreButton}>Learn more</button>
+            <button className={classes.learnMoreButton}>
+                Learn more
+            </button>
         </div>
     )
 }

@@ -6,7 +6,9 @@ const AboutSection = () => {
     return(
         <div className={classes.aboutSectionContainer}>
             <div className={classes.contentContainer}>
-                <img src={dogPicture} alt='About section'/>
+                <div className={classes.pictureContainer}>
+                    <img src={dogPicture} alt='About section'/>
+                </div>
 
                 <div className={classes.content}>
                     <h3>About the shelter <br/> “Cozy House”</h3>

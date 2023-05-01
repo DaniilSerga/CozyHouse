@@ -30,3 +30,28 @@
     letter-spacing: 1.3px;
     color: #fff;
 }
+
+.menuButtonSection {
+    position: fixed;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    right: 53px;
+    z-index: 2;
+    display: none;
+}
+
+.closeImg {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 320px) {
+    .headerContainer {
+        position: relative;
+        margin: 30px 10px 0;
+    }
+    .menuButtonSection {
+        width: 30px;
+        height: fit-content;
+        display: flex;
+    }
+}
