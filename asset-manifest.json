@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CozyHouse/static/css/main.e0656d94.css",
-    "main.js": "/CozyHouse/static/js/main.f03e06f8.js",
+    "main.css": "/CozyHouse/static/css/main.fc3b9c30.css",
+    "main.js": "/CozyHouse/static/js/main.de5f59c4.js",
     "static/js/787.cb60dd18.chunk.js": "/CozyHouse/static/js/787.cb60dd18.chunk.js",
     "static/media/startPagePuppy.webp": "/CozyHouse/static/media/startPagePuppy.e0c35d5212418e2414ad.webp",
     "static/media/donation-dog.webp": "/CozyHouse/static/media/donation-dog.9ac50dcf157d7b568be7.webp",
@@ -33,15 +33,17 @@
     "static/media/slick.woff": "/CozyHouse/static/media/slick.295183786cd8a1389865.woff",
     "static/media/credit-card.svg": "/CozyHouse/static/media/credit-card.b0a55b5f9acb325550a024c941c60044.svg",
     "static/media/pinIcon.svg": "/CozyHouse/static/media/pinIcon.123c22bef80634c1c98876d314d75f19.svg",
-    "static/media/closeIcon.svg": "/CozyHouse/static/media/closeIcon.a73147d789c6c6799cc95b6de09ef7ac.svg",
     "index.html": "/CozyHouse/index.html",
+    "static/media/closeIconDark.svg": "/CozyHouse/static/media/closeIconDark.63d70888947cb9b993a19e0e1aad0bd8.svg",
+    "static/media/closeIconLight.svg": "/CozyHouse/static/media/closeIconLight.cf132fb6ef1659119809a6a0e24d21a8.svg",
     "static/media/burgerIcon.svg": "/CozyHouse/static/media/burgerIcon.466481b1cb7fe5eda00834474eb10495.svg",
-    "main.e0656d94.css.map": "/CozyHouse/static/css/main.e0656d94.css.map",
-    "main.f03e06f8.js.map": "/CozyHouse/static/js/main.f03e06f8.js.map",
+    "static/media/burgerIconDark.svg": "/CozyHouse/static/media/burgerIconDark.44a5dc7dc3033723a699a93b61d87e3c.svg",
+    "main.fc3b9c30.css.map": "/CozyHouse/static/css/main.fc3b9c30.css.map",
+    "main.de5f59c4.js.map": "/CozyHouse/static/js/main.de5f59c4.js.map",
     "787.cb60dd18.chunk.js.map": "/CozyHouse/static/js/787.cb60dd18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0656d94.css",
-    "static/js/main.f03e06f8.js"
+    "static/css/main.fc3b9c30.css",
+    "static/js/main.de5f59c4.js"
   ]
 }
