@@ -57,7 +57,8 @@
     }
 }
 
-@media (max-width: 320px) {
+/* Instead of 320px, 470px is being used */
+@media (max-width: 470px) {
     .aboutSectionContainer {
         padding: 42px 10px;
     }

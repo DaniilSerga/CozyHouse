@@ -37,6 +37,11 @@
     color: #545454;
 }
 
+.imageContainer > img {
+    width: 100%;
+    height: auto;
+}
+
 .creditCard {
     display: flex;
     padding: 10px 15px;
@@ -77,7 +82,7 @@
         order: 1;
     }
 
-    .contentContainer > img {
+    .imageContainer {
         order: 2;
     }
 }

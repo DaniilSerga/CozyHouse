@@ -63,7 +63,8 @@
     }
 }
 
-@media (max-width: 320px) {
+/* Instead of 320px, 470px is being used */
+@media (max-width: 470px) {
     .helpSectionContainer {
         padding: 42px 15px;
         gap: 42px;

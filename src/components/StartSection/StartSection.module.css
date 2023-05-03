@@ -17,6 +17,10 @@
     animation: fadeIn 1s;
 }
 
+.contentContainer > img {
+    width: 100%;
+    height: auto;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -24,12 +28,6 @@
     100% {
         opacity: 1;
     }
-}
-
-.contentWrapper > img {
-    align-self: flex-end;
-    max-width: 100%;
-    height: auto;
 }
 
 .content {
@@ -98,9 +96,9 @@
     }
 }
 
-@media (max-width: 320px) {
+/* Instead of 320px 470px is being used */
+@media (max-width: 470px) {
     .startScreenContainer {
-
     }
     .contentContainer {
         margin: 0;
@@ -110,6 +108,7 @@
 
     .content {
         flex-direction: column;
+        align-items: center;
         gap: 42px;
         margin: 0;
     }
