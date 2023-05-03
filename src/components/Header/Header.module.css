@@ -1,8 +1,8 @@
 .headerContainer {
-    margin: 60px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 60px 40px;
 }
 
 .titleContainer {
@@ -10,6 +10,15 @@
     flex-direction: column;
     gap: 10px;
     text-align: left;
+}
+
+.titleLight {
+    margin: 0;
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
 .titleDark {
@@ -31,29 +40,6 @@
     color: #fff;
 }
 
-.menuButtonSection {
-    position: fixed;
-    margin-top: 20px;
-    margin-bottom: 18px;
-    right: 53px;
-    z-index: 2;
-    display: none;
-}
-
-.closeImg {
-    width: 30px;
-    height: 30px;
-}
-
-.titleLight {
-    margin: 0;
-    color: #545454;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 32px;
-    letter-spacing: 1px;
-}
-
 .subtitleLight {
     margin: 0;
     font-family: 'Arial';
@@ -62,6 +48,20 @@
     font-size: 13px;
     letter-spacing: 1.3px;
     color: #292929;
+}
+
+.menuButtonSection {
+    z-index: 2;
+    position: fixed;
+    right: 53px;
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.closeImg {
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 700px) {

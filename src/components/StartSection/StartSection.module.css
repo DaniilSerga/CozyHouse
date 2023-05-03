@@ -10,10 +10,10 @@
 
 .contentContainer {
     display: flex;
-    padding: 0 40px;
     justify-content: space-between;
-    margin-top: 60px;
     gap: 42px;
+    padding: 0 40px;
+    margin-top: 60px;
     animation: fadeIn 1s;
 }
 
@@ -21,23 +21,15 @@
     width: 100%;
     height: auto;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 .content {
-    max-width: 460px;
     display: flex;
     align-self: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 42px;
     margin-bottom: 60px;
+    max-width: 460px;
 }
 
 .content > h3 {
@@ -51,11 +43,11 @@
 }
 
 .content > p {
-    color: #cdcdcd;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-align: left;
+    color: #cdcdcd;
 }
 
 .content > button {
@@ -71,6 +63,15 @@
 .content > button:hover {
     background-color: #fddcc4;
     transition: 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
