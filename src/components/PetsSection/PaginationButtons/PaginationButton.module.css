@@ -1,0 +1,12 @@
+.paginationButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 19px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    overflow: hidden;
+}

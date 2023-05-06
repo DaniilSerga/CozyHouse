@@ -9,15 +9,15 @@ import collarsOrLeashesIcon from '../assets/icons/collarsOrLeashesIcon.svg';
 import sleepingAreasIcon from '../assets/icons/sleepingAreaIcon.svg';
 
 const HELP_LIST = [
-    {img: petFoodIcon, description: 'Pet food'},
-    {img: transportationIcon, description: 'Transportation'},
-    {img: toysIcon, description: 'Toys'},
-    {img: bowlsAndCupsIcon, description: 'Bowls and cups'},
-    {img: shampoosIcon, description: 'Shampoos'},
-    {img: vitaminsIcon, description: 'Vitamins'},
-    {img: medicinesIcon, description: 'Medicines'},
-    {img: collarsOrLeashesIcon, description: 'Collars / leashes'},
-    {img: sleepingAreasIcon, description: 'Sleeping areas'},
+    {id: 0, img: petFoodIcon, description: 'Pet food'},
+    {id: 1, img: transportationIcon, description: 'Transportation'},
+    {id: 2, img: toysIcon, description: 'Toys'},
+    {id: 3, img: bowlsAndCupsIcon, description: 'Bowls and cups'},
+    {id: 4, img: shampoosIcon, description: 'Shampoos'},
+    {id: 5, img: vitaminsIcon, description: 'Vitamins'},
+    {id: 6, img: medicinesIcon, description: 'Medicines'},
+    {id: 7, img: collarsOrLeashesIcon, description: 'Collars / leashes'},
+    {id: 8, img: sleepingAreasIcon, description: 'Sleeping areas'},
 ]
 
 export default HELP_LIST;

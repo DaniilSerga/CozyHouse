@@ -11,3 +11,9 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 700px) {
+    .content {
+        margin-top: 120px;
+    }
+}

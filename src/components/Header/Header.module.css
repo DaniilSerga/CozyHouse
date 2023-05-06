@@ -1,4 +1,5 @@
-.headerContainer {
+.headerContainerLight,
+.headerContainerDark {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +52,8 @@
 }
 
 .menuButtonSection {
-    z-index: 2;
     position: fixed;
+    z-index: 2;
     right: 53px;
     display: none;
     margin-top: 20px;
@@ -64,10 +65,30 @@
     height: 30px;
 }
 
+@media (max-width: 768px) {
+    .headerContainerDark,
+    .headerContainerLight {
+        margin: 30px;
+    }
+}
+
 @media (max-width: 700px) {
-    .headerContainer {
-        /* position: fixed; */
-        margin: 30px 10px;
+    .headerContainerDark {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        margin: 0;
+        padding: 30px 10px;
+        background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    }
+
+    .headerContainerLight {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        margin: 0;
+        padding: 30px 10px;
+        background-color: #fff;
     }
 
     .menuButtonSection {

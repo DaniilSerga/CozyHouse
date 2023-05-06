@@ -11,12 +11,12 @@ const HelpSection = () => {
                 {
                     helpList.map(helpItem => {
                         return (
-                        <div className={classes.helpItem}>
-                            <div className={classes.iconContainer}>
-                                <img src={helpItem.img} alt={helpItem.description}/>
+                            <div className={classes.helpItem} key={helpItem.id}>
+                                <div className={classes.iconContainer}>
+                                    <img src={helpItem.img} alt={helpItem.description}/>
+                                </div>
+                                <p>{helpItem.description}</p>
                             </div>
-                            <p>{helpItem.description}</p>
-                        </div>
                         )
                     })
                 }

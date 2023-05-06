@@ -1,8 +1,8 @@
 .sliderContainer {
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .slickSlider {
@@ -16,12 +16,12 @@
 
 .prevButton,
 .nextButton {
-    width: 52px;
-    height: 52px;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    width: 52px;
+    height: 52px;
     padding: 19px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;

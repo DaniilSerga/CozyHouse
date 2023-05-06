@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     gap: 42px;
-    padding: 0 40px;
+    padding: 30px 40px 0;
     margin-top: 60px;
     animation: fadeIn 1s;
 }
@@ -77,7 +77,8 @@
 @media (max-width: 768px) {
     .contentContainer {
         position: relative;
-        margin: 0 100px;
+        margin: 0;
+        padding: 30px 100px 0;
         justify-content: center;
         flex-direction: column;
         gap: 100px;
@@ -91,20 +92,33 @@
         position: relative;
     }
 
-    /* Size is not equal to the provided in design */
+    /* TODO
+        Size is not equal to the provided one in design 
+    */
     .contentContainer > img {
+        margin: 0;
         margin-left: 70px;
     }
 }
 
-/* Instead of 320px 470px is being used */
-@media (max-width: 470px) {
-    .startScreenContainer {
+@media (max-width: 700px) {
+    .contentContainer {
+        padding: 150px 100px 0;
     }
+}
+
+/* Instead of 320px, 470px is being used */
+@media (max-width: 470px) {
     .contentContainer {
         margin: 0;
-        padding: 60px 10px 0;
+        padding: 150px 10px 0;
         gap: 0;
+    }
+
+    .contentContainer > img {
+        margin: 0;
+        margin-left: 40px;
+        margin-top: 105px;
     }
 
     .content {
@@ -123,11 +137,5 @@
     .content > p {
         text-align: center;
         font-size: 15px;
-    }
-
-    .contentContainer > img {
-        margin: 0;
-        margin-left: 40px;
-        margin-top: 105px;
     }
 }

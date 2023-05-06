@@ -1,10 +1,12 @@
-import React from 'react';
-// import classes from './PaginationButton.module.css';
+import React, { useEffect, useState } from 'react';
+import classes from './PaginationButton.module.css';
 
-const PaginationButton = ({ type }) => {
+const PaginationButton = ({ type, ...props }) => {
+    console.log(props);
+
     const getCharachter = (type) => {
         if (type === 'next') {
-            return '>'
+            return '>';
         } else if (type === 'previous') {
             return '<';
         } else if (type === 'first') {

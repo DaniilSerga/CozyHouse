@@ -68,7 +68,8 @@
     align-items: center;
 }
 
-@media (max-width: 768px) {
+/* 964px is being used instead of 768 */
+@media (max-width: 964px) {
     .footerWrapper {
         justify-content: space-around;
         gap: 65px 60px;

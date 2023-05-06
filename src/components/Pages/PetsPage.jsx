@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './PetsPage.module.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import PetsPageCarousel from '../PetsSection/PetsPageCarousel';
+import PetsPageCarousel from '../PetsSection/PaginationSection';
 
 const PetsPage = () => {
     return (

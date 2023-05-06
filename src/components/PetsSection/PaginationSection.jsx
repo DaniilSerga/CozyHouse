@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import classes from './PetsPageCarousel.module.css';
+import classes from './PaginationSection.module.css';
 import petsList from '../../constants/petsList';
 import { Pagination } from '@mui/material';
 import PetCard from '../Cards/PetCard';
 
-const PetsPageCarousel = () => {
+const PaginationSection = () => {
     const getItemsPerPage = (width) => {
         if (width >= 1280) {
             return 8;
@@ -61,15 +61,16 @@ const PetsPageCarousel = () => {
                 }
             </div>
             
-            <Pagination 
+            <Pagination     
                 count={pagesAmn}
                 page={page}
                 showLastButton={true}
                 showFirstButton={true}
+                siblingCount={3}
                 onChange={(_, pageNum) => setPage(pageNum)}
-                />
+            />
         </div>
     )
 }
 
-export default PetsPageCarousel;
+export default PaginationSection;

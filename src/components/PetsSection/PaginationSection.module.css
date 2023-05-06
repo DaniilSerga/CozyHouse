@@ -7,14 +7,14 @@
     background-color: #f6f6f6;
 }
 
+ul {
+    justify-content: center;
+}
+
 .carouselContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-}
-
-ul {
-    justify-content: center;
 }
 
 .title {
@@ -78,6 +78,20 @@ ul {
     transition: 0.3s;
 }
 
+.paginationButton {
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 19px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .carouselSectionContainer {
         padding: 60px 30px 70px;
@@ -92,5 +106,19 @@ ul {
     .title {
         font-size: 25px;
         line-height: 32px;
+    }
+
+    .paginationButton {
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        padding: 19px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        overflow: hidden;
     }
 }

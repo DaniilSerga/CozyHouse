@@ -10,12 +10,12 @@ import Footer from '../Footer/Footer';
 const StartPage = () => {
     return (
         <div className={classes.startPageContainer}>
-            <StartSection/>
-            <AboutSection/>
-            <PetsSection/>
-            <HelpSection/>
-            <DonationSection/>
-            <Footer/>
+            <StartSection />
+            <AboutSection />
+            <PetsSection />
+            <HelpSection />
+            <DonationSection />
+            <Footer />
         </div>
     )
 }
