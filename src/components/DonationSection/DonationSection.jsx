@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './DonationSection.module.css';
 import donationImage from '../../assets/images/donation-dog.webp';
-import creditCardImage from '../../assets/icons/credit-card.svg';
+import creditCardImage from '../../assets/icons/creditCard.svg';
 
 const DonationSection = () => {
     return (

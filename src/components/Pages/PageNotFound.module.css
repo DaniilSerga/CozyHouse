@@ -4,17 +4,46 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    padding: 0 10px;
     height: 100vh;
 }
 
+.pageContainer > img {
+    width: 100%;
+    height: auto;
+}
 .header {
     font-family: Georgia;
-    font-style: italic;
     font-weight: 400;
     font-size: 32px;
+    color: #4c4c4c;
 }
 
 .link {
-    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 45px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: #292929;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
 }
 
+.link:hover {
+    background: #fddcc4;
+    border-color: transparent;
+    transition: 0.3s;
+}
+
+@media (max-width: 320px) {
+    .header {
+        font-size: 25px;
+    }
+}

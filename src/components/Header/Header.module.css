@@ -1,9 +1,15 @@
+.headerWrapperLight,
+.headerWrapperDark {
+    position: relative;
+    margin: 30px 40px;
+}
+
 .headerContainerLight,
 .headerContainerDark {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 40px;
 }
 
 .titleContainer {
@@ -52,12 +58,9 @@
 }
 
 .menuButtonSection {
-    position: fixed;
     z-index: 2;
-    right: 53px;
     display: none;
-    margin-top: 20px;
-    margin-bottom: 18px;
+    margin-right: 3px;
 }
 
 .closeImg {
@@ -66,34 +69,45 @@
 }
 
 @media (max-width: 768px) {
-    .headerContainerDark,
-    .headerContainerLight {
+    .headerWrapperLight,
+    .headerWrapperDark {
         margin: 30px;
     }
 }
 
 @media (max-width: 700px) {
-    .headerContainerDark {
+    .headerWrapperDark {
         position: fixed;
         z-index: 1;
         width: 100%;
         margin: 0;
-        padding: 30px 10px;
         background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     }
-
-    .headerContainerLight {
+    
+    .headerWrapperLight {
         position: fixed;
         z-index: 1;
         width: 100%;
         margin: 0;
-        padding: 30px 10px;
         background-color: #fff;
     }
 
+    .headerContainerDark {
+        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+        background-image: url('../../assets/background/noise_transparent.svg');
+    }
+
+    .headerContainerLight {
+        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+
     .menuButtonSection {
-        width: 30px;
         height: fit-content;
         display: flex;
+        align-items: center;
     }
 }
