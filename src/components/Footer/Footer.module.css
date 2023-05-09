@@ -7,32 +7,17 @@
     }
     
 .footerWrapper {
-    padding: 40px 40px 0 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background-repeat: repeat;
     background-image: url('../../assets/background/noise_transparent.svg');
 }
 
-.title {
-    text-align: left;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-    color: #fff;
-}
-
-.descriptionText {
-    text-align: left;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 1px;
-    color: #f1cdb3;
+.contentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 40px 0 40px;
 }
 
 .contactsSection {
@@ -47,8 +32,37 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 34px;
     margin-bottom: 60px;
+}
+
+.locationsSection:first-child(.locationContainer) {
+    margin-top: 34px;
+}
+
+.locationsSection:last-child(.locationContainer) {
+    margin-top: 32px;
+}
+
+.title {
+    text-align: left;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.descriptionText {
+    text-align: left;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
 }
 
 .mailContainer,
@@ -61,16 +75,23 @@
     gap: 20px;
 }
 
+.mailContainer,
+.phoneContainer {
+    max-height: 32px;
+}
+
 .iconContainer {
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
+}
+.iconContainer > img {
+    width: 100%;
+    height: auto;
 }
 
 /* 964px is being used instead of 768 */
 @media (max-width: 964px) {
-    .footerWrapper {
+    .contentContainer {
         justify-content: space-around;
         gap: 65px 60px;
         padding: 30px 30px 0;
@@ -80,23 +101,15 @@
     .contactsSection {
         margin-bottom: 0;
     }
+
+    .locationsSection {
+        gap: 33px;
+    }
 }
 
-@media (max-width: 320px) {
-    .footerWrapper {
-        padding: 30px 10px 0;
-        gap: 40px;
-    }
-
-    .footerWrapper > img {
-        
-        margin: 0 30px;
-    }
-
+@media (max-width: 692px) {
     .title {
         text-align: center;
-        font-size: 25px;
-        line-height: 32px;
     }
 
     .contactsSection, 
@@ -109,6 +122,24 @@
         width: 100%;
         justify-content: flex-start;
     }
+    
+}
+@media (max-width: 320px) {
+    .contentContainer {
+        padding: 30px 10px 0;
+        gap: 40px;
+    }
+
+    .contentContainer > img {
+        margin: 0 30px;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    
 
     .descriptionText {
         font-size: 20px;

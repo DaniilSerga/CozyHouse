@@ -12,8 +12,9 @@
     display: flex;
     justify-content: space-between;
     gap: 42px;
-    padding: 30px 40px 0;
-    margin-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 0;
     animation: fadeIn 1s;
 }
 
