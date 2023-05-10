@@ -62,13 +62,16 @@
     align-items: center;
 }
 
-.disabledLink > button {
+.disabledLink > .nextButton,
+.disabledLink > .prevButton {
+    cursor: unset;
     border: 2px solid #cdcdcd;
     color: #cdcdcd;
     background-color: transparent;
 }
 
 .disabledButton {
+    cursor: unset;
     border: 2px solid #cdcdcd;
     color: #cdcdcd;
     background-color: transparent;
@@ -83,13 +86,21 @@
     background-color: transparent;
 }
 
-.nextButton:hover,
 .prevButton:hover,
+.nextButton:hover,
 .firstPageButton:hover,
 .lastPageButton:hover {
     border: 2px solid transparent;
     background-color: #f1cdb3;
     transition: 0.3s;
+}
+
+.disabledLink > button:hover {
+    cursor: unset;
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    background-color: transparent;
+    transition: 0;
 }
 
 @media (max-width: 1279px) {

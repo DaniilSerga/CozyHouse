@@ -108,16 +108,20 @@ const PaginationSection = () => {
                     pageRangeDisplayed={0}
                     onPageChange={handlePageClick}
                     containerClassName={classes.paginationContainer}
+                    
+                    nextLinkClassName={classes.nextLinkContainer}
+                    previousLinkClassName={classes.previousLinkContainer}
+                    
                     pageLinkClassName={classes.pageContainer}
                     pageLinkBuilder={(pageNumber) => (
                         <div className={classes.pageContainer}>{pageNumber + 1}</div>
                     )}
                     previousLabel={
-                        <button className={classes.nextButton}>
+                        <button className={classes.prevButton}>
                             {'<'}
                         </button>}
                     nextLabel={
-                        <button className={classes.prevButton}>
+                        <button className={classes.nextButton}>
                             {'>'}
                         </button>}
                     forcePage={currentPage}
