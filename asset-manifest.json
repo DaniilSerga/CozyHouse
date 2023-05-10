@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/CozyHouse/static/css/main.381442e0.css",
-    "main.js": "/CozyHouse/static/js/main.8374bb61.js",
+    "main.js": "/CozyHouse/static/js/main.9dec2d9a.js",
     "static/css/523.45c02339.chunk.css": "/CozyHouse/static/css/523.45c02339.chunk.css",
     "static/js/523.a351cede.chunk.js": "/CozyHouse/static/js/523.a351cede.chunk.js",
-    "static/css/283.7195599a.chunk.css": "/CozyHouse/static/css/283.7195599a.chunk.css",
+    "static/css/283.051fbf77.chunk.css": "/CozyHouse/static/css/283.051fbf77.chunk.css",
     "static/js/283.0951ea31.chunk.js": "/CozyHouse/static/js/283.0951ea31.chunk.js",
-    "static/css/648.180b68ec.chunk.css": "/CozyHouse/static/css/648.180b68ec.chunk.css",
+    "static/css/648.99b3994c.chunk.css": "/CozyHouse/static/css/648.99b3994c.chunk.css",
     "static/js/648.650be299.chunk.js": "/CozyHouse/static/js/648.650be299.chunk.js",
     "static/js/787.cb60dd18.chunk.js": "/CozyHouse/static/js/787.cb60dd18.chunk.js",
     "static/js/113.66f0e5e3.chunk.js": "/CozyHouse/static/js/113.66f0e5e3.chunk.js",
@@ -48,12 +48,12 @@
     "static/media/burgerIconLight.svg": "/CozyHouse/static/media/burgerIconLight.466481b1cb7fe5eda00834474eb10495.svg",
     "static/media/burgerIconDark.svg": "/CozyHouse/static/media/burgerIconDark.44a5dc7dc3033723a699a93b61d87e3c.svg",
     "main.381442e0.css.map": "/CozyHouse/static/css/main.381442e0.css.map",
-    "main.8374bb61.js.map": "/CozyHouse/static/js/main.8374bb61.js.map",
+    "main.9dec2d9a.js.map": "/CozyHouse/static/js/main.9dec2d9a.js.map",
     "523.45c02339.chunk.css.map": "/CozyHouse/static/css/523.45c02339.chunk.css.map",
     "523.a351cede.chunk.js.map": "/CozyHouse/static/js/523.a351cede.chunk.js.map",
-    "283.7195599a.chunk.css.map": "/CozyHouse/static/css/283.7195599a.chunk.css.map",
+    "283.051fbf77.chunk.css.map": "/CozyHouse/static/css/283.051fbf77.chunk.css.map",
     "283.0951ea31.chunk.js.map": "/CozyHouse/static/js/283.0951ea31.chunk.js.map",
-    "648.180b68ec.chunk.css.map": "/CozyHouse/static/css/648.180b68ec.chunk.css.map",
+    "648.99b3994c.chunk.css.map": "/CozyHouse/static/css/648.99b3994c.chunk.css.map",
     "648.650be299.chunk.js.map": "/CozyHouse/static/js/648.650be299.chunk.js.map",
     "787.cb60dd18.chunk.js.map": "/CozyHouse/static/js/787.cb60dd18.chunk.js.map",
     "113.66f0e5e3.chunk.js.map": "/CozyHouse/static/js/113.66f0e5e3.chunk.js.map",
@@ -61,6 +61,6 @@
   },
   "entrypoints": [
     "static/css/main.381442e0.css",
-    "static/js/main.8374bb61.js"
+    "static/js/main.9dec2d9a.js"
   ]
 }
