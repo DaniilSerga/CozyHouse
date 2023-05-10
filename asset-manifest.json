@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/CozyHouse/static/css/main.381442e0.css",
-    "main.js": "/CozyHouse/static/js/main.7b0c95d3.js",
+    "main.js": "/CozyHouse/static/js/main.a6054df0.js",
     "static/css/523.45c02339.chunk.css": "/CozyHouse/static/css/523.45c02339.chunk.css",
     "static/js/523.a351cede.chunk.js": "/CozyHouse/static/js/523.a351cede.chunk.js",
-    "static/css/283.79ad1f4b.chunk.css": "/CozyHouse/static/css/283.79ad1f4b.chunk.css",
+    "static/css/283.7195599a.chunk.css": "/CozyHouse/static/css/283.7195599a.chunk.css",
     "static/js/283.0951ea31.chunk.js": "/CozyHouse/static/js/283.0951ea31.chunk.js",
     "static/css/648.5da50abc.chunk.css": "/CozyHouse/static/css/648.5da50abc.chunk.css",
     "static/js/648.99663fca.chunk.js": "/CozyHouse/static/js/648.99663fca.chunk.js",
@@ -48,10 +48,10 @@
     "static/media/burgerIconLight.svg": "/CozyHouse/static/media/burgerIconLight.466481b1cb7fe5eda00834474eb10495.svg",
     "static/media/burgerIconDark.svg": "/CozyHouse/static/media/burgerIconDark.44a5dc7dc3033723a699a93b61d87e3c.svg",
     "main.381442e0.css.map": "/CozyHouse/static/css/main.381442e0.css.map",
-    "main.7b0c95d3.js.map": "/CozyHouse/static/js/main.7b0c95d3.js.map",
+    "main.a6054df0.js.map": "/CozyHouse/static/js/main.a6054df0.js.map",
     "523.45c02339.chunk.css.map": "/CozyHouse/static/css/523.45c02339.chunk.css.map",
     "523.a351cede.chunk.js.map": "/CozyHouse/static/js/523.a351cede.chunk.js.map",
-    "283.79ad1f4b.chunk.css.map": "/CozyHouse/static/css/283.79ad1f4b.chunk.css.map",
+    "283.7195599a.chunk.css.map": "/CozyHouse/static/css/283.7195599a.chunk.css.map",
     "283.0951ea31.chunk.js.map": "/CozyHouse/static/js/283.0951ea31.chunk.js.map",
     "648.5da50abc.chunk.css.map": "/CozyHouse/static/css/648.5da50abc.chunk.css.map",
     "648.99663fca.chunk.js.map": "/CozyHouse/static/js/648.99663fca.chunk.js.map",
@@ -61,6 +61,6 @@
   },
   "entrypoints": [
     "static/css/main.381442e0.css",
-    "static/js/main.7b0c95d3.js"
+    "static/js/main.a6054df0.js"
   ]
 }
