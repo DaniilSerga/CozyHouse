@@ -26,10 +26,7 @@
     max-width: 1200px;
 }
 
-.paginationButtonsWrapper {
-    display: flex;
-    gap: 20px;
-}
+.paginationButtonsWrapper,
 .paginationWrapper {
     display: flex;
     justify-content: center;
@@ -110,7 +107,6 @@
     .title {
         font-size: 25px;
         line-height: 32px;
-
     }
     
     .itemsContainer {

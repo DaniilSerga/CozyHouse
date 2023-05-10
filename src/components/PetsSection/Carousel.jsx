@@ -13,17 +13,9 @@ const Carousel = ({petsList}) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
-          {
-            breakpoint: 1300,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-            }
-          },
           {
             breakpoint: 1060,
             settings: {
@@ -50,7 +42,7 @@ const Carousel = ({petsList}) => {
                     petsList.map(pet => {
                         return (
                           <>
-                            <div className={classes.listItemWrapper}>
+                            <div key={pet.id} className={classes.listItemWrapper}>
                               <PetCard pet={pet}/>
                             </div>
                           </>
