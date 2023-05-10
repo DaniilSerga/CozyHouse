@@ -38,7 +38,7 @@
 
 .helpList {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 55px 120px;
     padding: 60px 87px 0;
@@ -46,7 +46,8 @@
     max-width: 1026px;
 }
 
-@media (max-width: 768px) {
+/* 1052px is used instead of 768px */
+@media (max-width: 1052px) {
     .helpSectionContainer {
         display: flex;
         flex-direction: column;
@@ -59,9 +60,10 @@
     }
     
     .helpList {
-        justify-content: space-between;
+        justify-content: center;
         gap: 55px 60px;
         margin: 0;
+        padding: 0;
     }
 }
 

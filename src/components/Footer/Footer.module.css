@@ -108,6 +108,10 @@
 }
 
 @media (max-width: 692px) {
+    .contentContainer {
+        gap: 40px;
+    }
+
     .title {
         text-align: center;
     }
@@ -124,22 +128,22 @@
     }
     
 }
-@media (max-width: 320px) {
+
+/* 470px is used instead of 320px */
+@media (max-width: 470px) {
     .contentContainer {
         padding: 30px 10px 0;
         gap: 40px;
     }
 
     .contentContainer > img {
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .title {
         font-size: 25px;
         line-height: 32px;
     }
-
-    
 
     .descriptionText {
         font-size: 20px;

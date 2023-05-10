@@ -1,74 +1,133 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import classes from './PaginationSection.module.css';
 import petsList from '../../constants/petsList';
 import { Pagination } from '@mui/material';
 import PetCard from '../Cards/PetCard';
+import ReactPaginate from "react-paginate";
 
 const PaginationSection = () => {
-    const getItemsPerPage = (width) => {
-        if (width >= 1280) {
-            return 8;
-        } else if (width >= 900) {
-            return 6;
-        } else {
-            return 3;
-        }
-    }
+    const [currentPage, setCurrentPage] = useState(0);
+    const [itemsPerPage, setItemsPerPage] = useState(8);
+    const [displayedPets, setDisplayedPets] = useState(
+        petsList.slice(0, itemsPerPage)
+    )
 
-    const [pagesAmn, setPagesAmn] = useState(0);
-    const [page, setPage] = useState(1);
-    const [pets, setPets] = useState([]);
-    const [itemsPerPage, setItemsPerPage] = useState(
-        getItemsPerPage(window.innerWidth)
-    );
+    const [pagesCount, setPagesCount] = useState(
+        Math.ceil(petsList.length / itemsPerPage)
+    )
 
-    // TODO Refactoring and optimization required
+    const firstPageButton = useRef(null);
+    const lastPageButton = useRef(null);
+    const reactPaginateRef = useRef(null);
+
     useEffect(() => {
         window.addEventListener('resize', () => {
-            setItemsPerPage(getItemsPerPage(window.innerWidth));
-        });
-    }, [])
+            if (window.innerWidth >= 1280) {
+                setItemsPerPage(8);
+            } else if (window.innerWidth >= 640) {
+                setItemsPerPage(6);
+            } else {
+                setItemsPerPage(3);
+            }
+        })
+    }, []);
 
     useEffect(() => {
-        setPage(1);
-        setPagesAmn(Math.ceil(petsList.length / itemsPerPage));
-        setPets(getCurrentData());
+        console.log(itemsPerPage);
+        setPagesCount(
+            Math.ceil(petsList.length / itemsPerPage)
+        )
+
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+
+        setDisplayedPets(
+            petsList.slice(startIndex, endIndex)
+        )
     }, [itemsPerPage])
 
     useEffect(() => {
-        setPets(getCurrentData());
-    }, [page])
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
 
-    const getCurrentData = () => {
-        const start = (page - 1) * itemsPerPage;
-        const end = start + itemsPerPage;
+        setDisplayedPets(
+            petsList.slice(startIndex, endIndex)
+        )
+    }, [currentPage, itemsPerPage])
 
-        return petsList.slice(start, end);
+    useEffect(() => {
+        if (currentPage === 0) {
+            firstPageButton.current.className = classes.disabledButton;
+        } else {
+            firstPageButton.current.className = classes.firstPageButton;
+        }
+    }, [currentPage]);
+
+    useEffect(() => {
+        if (currentPage === pagesCount - 1  ) {
+            lastPageButton.current.className = classes.disabledButton;
+        } else {
+            lastPageButton.current.className = classes.lastPageButton;
+        }
+    }, [currentPage, pagesCount]);
+
+    const handleGoToFirstPage = () => {
+        setCurrentPage(0);
+        reactPaginateRef.current?.forcePage(0);
     }
 
+    const handleGoToLastPage = () => {
+        setCurrentPage(pagesCount - 1);
+        reactPaginateRef.current?.forcePage(pagesCount - 1);
+    };
+
+    const handlePageClick = ({ selected: selectedPage }) => {
+        setCurrentPage(selectedPage);
+    };
+
     return (
-        <div className={classes.carouselSectionContainer}>
+        <div className={classes.carouselContainer}>
             <h3 className={classes.title}>Our friends who <br/> are looking for a house</h3>
-            <div className={classes.cardsContainer}>
+            <div className={classes.itemsContainer}>
                 {
-                    pets.map(pet => {
-                        return (
-                            <div className={classes.cardWrapper} key={pet.id}>
-                                <PetCard pet={pet}/>
-                            </div>
-                        )
+                    displayedPets.map(pet => {
+                        return <PetCard key={pet.id} pet={pet} />
                     })
                 }
             </div>
-            
-            <Pagination     
-                count={pagesAmn}
-                page={page}
-                showLastButton={true}
-                showFirstButton={true}
-                siblingCount={3}
-                onChange={(_, pageNum) => setPage(pageNum)}
-            />
+
+            <div className={classes.paginationWrapper}>
+                <button ref={firstPageButton} className={classes.firstPageButton}
+                    onClick={handleGoToFirstPage}>
+                    {'<<'}
+                </button>
+                <ReactPaginate
+                    className={classes.paginationButtonsWrapper}
+                    pageCount={pagesCount}
+                    marginPagesDisplayed={0}
+                    pageRangeDisplayed={0}
+                    onPageChange={handlePageClick}
+                    containerClassName={classes.paginationContainer}
+                    pageLinkClassName={classes.pageContainer}
+                    pageLinkBuilder={(pageNumber) => (
+                        <div className={classes.pageContainer}>{pageNumber + 1}</div>
+                    )}
+                    previousLabel={
+                        <button className={classes.nextButton}>
+                            {'<'}
+                        </button>}
+                    nextLabel={
+                        <button className={classes.prevButton}>
+                            {'>'}
+                        </button>}
+                    forcePage={currentPage}
+                    disabledLinkClassName={classes.disabledLink}
+                />
+                <button ref={lastPageButton} className={classes.lastPageButton}
+                    onClick={handleGoToLastPage}>
+                    {'>>'}
+                </button>
+            </div>
         </div>
     )
 }
