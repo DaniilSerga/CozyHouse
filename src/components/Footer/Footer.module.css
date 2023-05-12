@@ -84,6 +84,7 @@
     display: flex;
     align-items: center;
 }
+
 .iconContainer > img {
     width: 100%;
     height: auto;
@@ -127,6 +128,10 @@
         justify-content: flex-start;
     }
     
+    .contentContainer > img {
+        max-width: 300px;
+        height: auto;
+    }
 }
 
 /* 470px is used instead of 320px */

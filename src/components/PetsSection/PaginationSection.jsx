@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import classes from './PaginationSection.module.css';
 import petsList from '../../constants/petsList';
-import { Pagination } from '@mui/material';
 import PetCard from '../Cards/PetCard';
 import ReactPaginate from "react-paginate";
 
@@ -21,14 +20,20 @@ const PaginationSection = () => {
     const reactPaginateRef = useRef(null);
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
+        const getItemsPerPageAmount = () => {
             if (window.innerWidth >= 1280) {
-                setItemsPerPage(8);
+                return 8;
             } else if (window.innerWidth >= 640) {
-                setItemsPerPage(6);
+                return 6;
             } else {
-                setItemsPerPage(3);
+                return 3;
             }
+        }
+
+        setItemsPerPage(getItemsPerPageAmount());
+
+        window.addEventListener('resize', () => {
+            setItemsPerPage(getItemsPerPageAmount())
         })
     }, []);
 

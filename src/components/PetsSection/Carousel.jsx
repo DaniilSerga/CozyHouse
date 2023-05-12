@@ -12,9 +12,12 @@ const Carousel = ({petsList}) => {
         className: classes.slickSlider,
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        swipeToSlide: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1060,
@@ -41,11 +44,11 @@ const Carousel = ({petsList}) => {
                 {
                     petsList.map(pet => {
                         return (
-                          <>
+                          <div key={pet.id}>
                             <div key={pet.id} className={classes.listItemWrapper}>
                               <PetCard pet={pet}/>
                             </div>
-                          </>
+                          </div>
                         )
                     })
                 }
