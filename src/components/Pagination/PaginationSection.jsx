@@ -4,13 +4,12 @@ import petsList from '../../constants/petsList';
 import PetCard from '../Cards/PetCard';
 import ReactPaginate from "react-paginate";
 
-const PaginationSection = () => {
+const Pagination = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(8);
     const [displayedPets, setDisplayedPets] = useState(
         petsList.slice(0, itemsPerPage)
     )
-
     const [pagesCount, setPagesCount] = useState(
         Math.ceil(petsList.length / itemsPerPage)
     )
@@ -38,7 +37,6 @@ const PaginationSection = () => {
     }, []);
 
     useEffect(() => {
-        console.log(itemsPerPage);
         setPagesCount(
             Math.ceil(petsList.length / itemsPerPage)
         )
@@ -49,7 +47,7 @@ const PaginationSection = () => {
         setDisplayedPets(
             petsList.slice(startIndex, endIndex)
         )
-    }, [itemsPerPage])
+    }, [currentPage, itemsPerPage])
 
     useEffect(() => {
         const startIndex = currentPage * itemsPerPage;
@@ -113,10 +111,8 @@ const PaginationSection = () => {
                     pageRangeDisplayed={0}
                     onPageChange={handlePageClick}
                     containerClassName={classes.paginationContainer}
-                    
                     nextLinkClassName={classes.nextLinkContainer}
                     previousLinkClassName={classes.previousLinkContainer}
-                    
                     pageLinkClassName={classes.pageContainer}
                     pageLinkBuilder={(pageNumber) => (
                         <div className={classes.pageContainer}>{pageNumber + 1}</div>
@@ -141,4 +137,4 @@ const PaginationSection = () => {
     )
 }
 
-export default PaginationSection;
+export default Pagination;

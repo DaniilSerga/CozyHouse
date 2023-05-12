@@ -3,40 +3,40 @@
 }
 
 .contentContainer {
-    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     gap: 120px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    gap: 25px;
     max-width: 430px;
+    gap: 25px;
 }
 
 .title {
-    text-align: left;
     font-family: Georgia;
+    text-align: left;
     font-size: 35px;
-    font-weight: 400;
     line-height: 45.5px;
+    font-weight: 400;
     letter-spacing: 0.06em;
     color: #545454;
 }
 
 .content > p {
-    color: #4c4c4c;
-    text-align: left;
     font-size: 15px;
+    text-align: left;
     line-height: 24px;
+    color: #4c4c4c;
 }
 
 .pictureContainer > img {
-    height: auto;
     max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -93,5 +93,4 @@
     .pictureContainer {
         margin: 42px 5px 0;
     } 
-
 }

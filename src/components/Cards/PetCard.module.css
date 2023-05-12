@@ -17,11 +17,11 @@
 }
 
 .cardContainer > p {
-    text-align: center;
     font-family: Georgia;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 1px;
+    text-align: center;
     color: #545454;
 }
 
@@ -29,9 +29,9 @@
     cursor: pointer;
     padding: 15px 45px;
     font-family: Georgia;
+    font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.06em;
-    font-size: 17px;
     color: #292929;
     border: 2px solid #F1CDB3;
     border-radius: 100px;

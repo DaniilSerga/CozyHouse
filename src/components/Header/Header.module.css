@@ -16,28 +16,28 @@
 
 .titleLight {
     margin: 0;
-    color: #545454;
     font-family: Georgia;
-    font-weight: 400;
     font-size: 32px;
+    font-weight: 400;
     letter-spacing: 1px;
+    color: #545454;
 }
 
 .titleDark {
     margin: 0;
-    color: #F1CDB3;
     font-family: Georgia;
-    font-weight: 400;
     font-size: 32px;
+    font-weight: 400;
     letter-spacing: 1px;
+    color: #F1CDB3;
 }
 
 .subtitleDark {
     margin: 0;
     font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1.3px;
     color: #fff;
 }
@@ -45,15 +45,15 @@
 .subtitleLight {
     margin: 0;
     font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1.3px;
     color: #292929;
 }
 
 .menuButtonSection {
-    z-index: 2;
+    z-index: 1;
     display: none;
     margin-right: 3px;
 }

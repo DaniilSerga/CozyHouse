@@ -2,16 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 40px 100px;
     gap: 60px;
+    padding: 80px 40px 100px;
     background-color: #f6f6f6;
 }
 
 .title {
     font-family: Georgia;
-    font-style: normal;
-    font-weight: 400;
     font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
     line-height: 45px;
     letter-spacing: 0.06em;
     color: #545454;
@@ -46,8 +46,8 @@
     font-family: Georgia;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-align: center;
     border-radius: 100px;
 }
 
@@ -65,16 +65,16 @@
 .disabledLink > .nextButton,
 .disabledLink > .prevButton {
     cursor: unset;
-    border: 2px solid #cdcdcd;
     color: #cdcdcd;
     background-color: transparent;
+    border: 2px solid #cdcdcd;
 }
 
 .disabledButton {
     cursor: unset;
-    border: 2px solid #cdcdcd;
     color: #cdcdcd;
     background-color: transparent;
+    border: 2px solid #cdcdcd;
 }
 
 .nextButton,
@@ -82,24 +82,24 @@
 .firstPageButton,
 .lastPageButton {
     color: #292929;
-    border: 2px solid #f1cdb3;
     background-color: transparent;
+    border: 2px solid #f1cdb3;
 }
 
 .prevButton:hover,
 .nextButton:hover,
 .firstPageButton:hover,
 .lastPageButton:hover {
-    border: 2px solid transparent;
     background-color: #f1cdb3;
+    border: 2px solid transparent;
     transition: 0.3s;
 }
 
 .disabledLink > button:hover {
     cursor: unset;
-    border: 2px solid #cdcdcd;
     color: #cdcdcd;
     background-color: transparent;
+    border: 2px solid #cdcdcd;
     transition: 0;
 }
 

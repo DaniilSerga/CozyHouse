@@ -16,8 +16,8 @@
 
 .header {
     font-family: Georgia;
-    font-weight: 400;
     font-size: 32px;
+    font-weight: 400;
     color: #4c4c4c;
 }
 
@@ -27,9 +27,9 @@
     justify-content: center;
     padding: 10px 45px;
     font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
     font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
     line-height: 22px;
     letter-spacing: 0.06em;
     text-decoration: none;
