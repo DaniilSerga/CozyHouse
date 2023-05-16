@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './PageNotFound.module.css';
 import { Link } from "react-router-dom";
-import dogPicture from '../../assets/images/donation-dog.webp';
+import dogPicture from '../../assets/images/donationDog.webp';
 
 const PageNotFound = () => {
     return (

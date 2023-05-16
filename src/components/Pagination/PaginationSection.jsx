@@ -34,6 +34,12 @@ const Pagination = () => {
         window.addEventListener('resize', () => {
             setItemsPerPage(getItemsPerPageAmount())
         })
+
+        return(() => 
+            window.removeEventListener(
+                'resize', setItemsPerPage(getItemsPerPageAmount())
+            )
+        );
     }, []);
 
     useEffect(() => {

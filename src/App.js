@@ -9,7 +9,7 @@ const PetsPage = WithSuspense(lazy(() => import('./components/Pages/PetsPage')))
 
 const App = () => {
   return (
-    <div className={classes.App}>
+    <div className={classes.app}>
           <Routes>
             <Route path='/CozyHouse/' element={<StartPage/>}/>
             <Route path='/CozyHouse/pets' element={<PetsPage/>}/>

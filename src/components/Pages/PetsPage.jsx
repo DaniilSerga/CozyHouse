@@ -7,7 +7,7 @@ import Pagination from '../Pagination/PaginationSection';
 const PetsPage = () => {
     return (
         <div className={classes.petsPageContainer}>
-            <Header lightStyles={true}/>
+            <Header lightStyles/>
             <div className={classes.content}>
                 <Pagination/>
             </div>

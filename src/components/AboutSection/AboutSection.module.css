@@ -19,10 +19,10 @@
 
 .title {
     font-family: Georgia;
-    text-align: left;
     font-size: 35px;
-    line-height: 45.5px;
     font-weight: 400;
+    text-align: left;
+    line-height: 45.5px;
     letter-spacing: 0.06em;
     color: #545454;
 }
@@ -58,7 +58,6 @@
     }
 }
 
-/* Instead of 320px, 470px is being used */
 @media (max-width: 470px) {
     .aboutSectionContainer {
         padding: 42px 25px;

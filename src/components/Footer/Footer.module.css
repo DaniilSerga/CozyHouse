@@ -58,8 +58,8 @@
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
-    text-align: left;
     font-style: normal;
+    text-align: left;
     line-height: 23px;
     letter-spacing: 0.06em;
     color: #f1cdb3;
@@ -134,7 +134,6 @@
     }
 }
 
-/* 470px is used instead of 320px */
 @media (max-width: 470px) {
     .contentContainer {
         padding: 30px 10px 0;
