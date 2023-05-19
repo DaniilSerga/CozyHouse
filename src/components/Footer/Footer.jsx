@@ -17,14 +17,14 @@ const Footer = () => {
                             <div className={classes.iconContainer}>
                                 <img src={mailIcon} alt='Mail' />
                             </div>
-                            <p className={classes.descriptionText}>email@shelter.com</p>
+                            <a href={'mailto:email@shelter.com'} className={classes.descriptionText}>email@shelter.com</a>
                         </div>
 
                         <div className={classes.phoneContainer}>
                             <div className={classes.iconContainer}>
                                 <img src={phoneIcon} alt='Phone number' />
                             </div>
-                            <p className={classes.descriptionText}>+13 674 567 75 54</p>
+                            <a href={'tel:+136745677554'} className={classes.descriptionText}>+13 674 567 75 54</a>
                         </div>
                     </div>
 
