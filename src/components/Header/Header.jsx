@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
 import Navbar from './Navbar';
 import burgerDark from '../../assets/icons/burgerIconDark.svg';
 import burgerLight from '../../assets/icons/burgerIconLight.svg';

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './PetsPage.module.css';
+import classes from './PetsPage.module.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Pagination from '../Pagination/PaginationSection';

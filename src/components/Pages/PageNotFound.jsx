@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './PageNotFound.module.css';
+import classes from './PageNotFound.module.scss';
 import { Link } from "react-router-dom";
 import dogPicture from '../../assets/images/donationDog.webp';
 

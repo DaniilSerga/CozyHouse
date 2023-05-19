@@ -1,0 +1,145 @@
+@import '../styles/mediaMixin.scss';
+
+.donationSectionContainer {
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #F6F6F6;
+
+    @include tablets {
+        padding: 80px 60px 100px;
+    }
+
+    @include mobiles {
+        padding: 42px 10px;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include tablets {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    @include mobiles {
+        gap: 42px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    gap: 20px;
+    text-align: left;
+
+    @include tablets {
+        order: 1;
+        max-width: 380px;
+    }
+
+    @include mobiles {
+        align-items: center;
+        max-width: 300px;
+    }
+}
+
+.header {
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+
+    @include tablets {
+        max-width: 300px;
+    }
+
+    @include mobiles {
+        text-align: center;
+        font-size: 25px;
+        line-height: 32px;
+        max-width: 220px;
+    }
+}
+
+.subHeader {
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #545454;
+
+    @include mobiles {
+        text-align: center;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+}
+
+.creditCard {
+    display: flex;
+    padding: 10px 15px;
+    width: fit-content;
+    gap: 15px;
+    background-color: #f1cdb3;
+    border-radius: 9px;
+
+    & > p {
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+
+    @include mobiles {
+        padding: 13px 15px;
+
+        & > p {
+            font-size: 15px;
+        }
+    }
+}
+
+.legalInfo {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    color: #b2b2b2;
+
+    @include mobiles {
+        max-width: 280px;
+        text-align: justify;
+    }
+}
+
+.imageContainer {
+    & > img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include tablets {
+        order: 2;
+    }
+
+    @include mobiles {
+        order: 2;
+        margin: 0 20px;
+
+        & > img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

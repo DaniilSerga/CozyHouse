@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Carousel.module.css';
+import classes from './Carousel.module.scss';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ const Carousel = ({petsList}) => {
         infinite: true,
         speed: 1000,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         swipeToSlide: true,
         slidesToShow: 3,
         pauseOnHover: true,
@@ -23,15 +23,12 @@ const Carousel = ({petsList}) => {
             breakpoint: 1060,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
             }
           },
           {
-            breakpoint: 720,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
             }
           }
         ]

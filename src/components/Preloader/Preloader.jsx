@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Preloader.module.css';
+import classes from './Preloader.module.scss';
 import loadingIcon from '../../assets/loadingIcon.svg';
 
 const Preloader = () => {

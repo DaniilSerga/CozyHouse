@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './DonationSection.module.css';
+import classes from './DonationSection.module.scss';
 import donationImage from '../../assets/images/donationDog.webp';
 import creditCardImage from '../../assets/icons/creditCard.svg';
 
@@ -11,7 +11,7 @@ const DonationSection = () => {
                     <img src={donationImage} alt='Donation section'/>
                 </div>
                 <div className={classes.content}>
-                    <h3 className={classes.header}>You can also <br/> make a donation</h3>
+                    <h3 className={classes.header}>You can also make a donation</h3>
                     <p className={classes.subHeader}>Name of the bank / Type of bank account</p>
                     <div className={classes.creditCard}>
                         <img src={creditCardImage} alt='Credit card'/>

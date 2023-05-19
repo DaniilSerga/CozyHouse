@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Footer.module.css';
+import classes from './Footer.module.scss';
 import footerImg from '../../assets/images/footerPuppy.webp';
 import pinIcon from '../../assets/icons/pinIcon.svg';
 import phoneIcon from '../../assets/icons/phoneIcon.svg';
@@ -11,7 +11,7 @@ const Footer = () => {
             <div className={classes.footerWrapper}>
                 <div className={classes.contentContainer}>
                     <div className={classes.contactsSection}>
-                        <h3 className={classes.title}>For questions <br /> and suggestions</h3>
+                        <h3 className={classes.title}>For questions and suggestions</h3>
 
                         <div className={classes.mailContainer}>
                             <div className={classes.iconContainer}>
@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
 
                     <div className={classes.locationsSection}>
-                        <h3 className={classes.title}>We are waiting <br /> for your visit</h3>
+                        <h3 className={classes.title}>We are waiting for your visit</h3>
 
                         <div className={classes.locationContainer}>
                             <div className={classes.iconContainer}>
@@ -48,7 +48,6 @@ const Footer = () => {
 
                     <img src={footerImg} alt='Footer section' />
                 </div>
-
             </div>
         </div>
     )

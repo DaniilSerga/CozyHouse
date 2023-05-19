@@ -1,3 +1,5 @@
+@import '../styles/mediaMixin.scss';
+
 .headerContainerLight,
 .headerContainerDark {
     position: relative;
@@ -5,6 +7,16 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 40px 30px;
+
+    @include tablets {
+        margin: 30px;
+    }
+
+    @include mobiles {
+        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
 }
 
 .titleContainer {
@@ -56,6 +68,12 @@
     z-index: 1;
     display: none;
     margin-right: 3px;
+
+    @include mobiles {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .closeImg {
@@ -63,31 +81,4 @@
     right: 53px;
     width: 30px;
     height: 30px;
-}
-
-@media (max-width: 768px) {
-    .headerContainerLight,
-    .headerContainerDark {
-        margin: 30px;
-    }
-}
-
-@media (max-width: 700px) {
-    .headerContainerDark {
-        height: 100%;
-        margin: 0;
-        padding: 30px 50px 30px 10px;
-    }
-
-    .headerContainerLight {
-        height: 100%;
-        margin: 0;
-        padding: 30px 50px 30px 10px;
-    }
-
-    .menuButtonSection {
-        height: fit-content;
-        display: flex;
-        align-items: center;
-    }
 }

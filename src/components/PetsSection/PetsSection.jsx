@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './PetsSection.module.css';
+import classes from './PetsSection.module.scss';
 import petsList from '../../constants/petsList';
 import Carousel from './Carousel';
 
@@ -7,7 +7,7 @@ const PetsSection = () => {
     return(
         <div className={classes.petsSection}>
             <div className={classes.header}>
-                <h3>Our friends who <br/> are looking for a house</h3>
+                <h3 className={classes.title}>Our friends who <br/> are looking for a house</h3>
             </div>
             <div className={classes.sliderSection}>
                 { petsList &&

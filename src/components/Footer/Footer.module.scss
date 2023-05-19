@@ -1,3 +1,5 @@
+@import '../styles/mediaMixin.scss';
+
 .footerContainer {
     background: radial-gradient(
         110.67% 538.64% at 5.73% 50%, 
@@ -18,6 +20,26 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 40px 0 40px;
+
+    @include tablets {
+        justify-content: space-around;
+        gap: 65px 60px;
+        padding: 30px 30px 0;
+
+        & > img {
+            max-width: 300px;
+            height: auto;
+        }
+    }
+
+    @include mobiles {
+        padding: 30px 10px 0;
+        gap: 40px;
+
+        & > img {
+            margin: 0 20px;
+        }
+    }
 }
 
 .contactsSection {
@@ -26,6 +48,17 @@
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 60px;
+
+    @include tablets {
+        max-width: 279px;
+        margin-bottom: 0;
+    }
+
+    @include mobiles {
+        justify-content: center;
+        align-items: center;
+        max-width: 278px;
+    }
 }
 
 .locationsSection {
@@ -33,25 +66,47 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 60px;
-}
 
-.locationsSection:first-child(.locationContainer) {
-    margin-top: 34px;
-}
+    &:first-child(.locationContainer) {
+        margin-top: 34px;
+    }
 
-.locationsSection:last-child(.locationContainer) {
-    margin-top: 32px;
+    &:last-child(.locationContainer) {
+        margin-top: 32px;
+    }
+
+    @include tablets {
+        gap: 33px;
+        max-width: 302px;
+        margin-bottom: 0;
+    }
+
+    @include mobiles {
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+
+        & > .title {
+            max-width: 270px;
+        }
+    }
 }
 
 .title {
     font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: left;
     color: #fff;
+
+    @include mobiles {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
 }
 
 .descriptionText {
@@ -63,6 +118,11 @@
     line-height: 23px;
     letter-spacing: 0.06em;
     color: #f1cdb3;
+
+    @include mobiles {
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
 
 .mailContainer,
@@ -75,6 +135,13 @@
     gap: 20px;
 }
 
+.locationContainer {
+    @include mobiles {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
 .mailContainer,
 .phoneContainer {
     max-height: 32px;
@@ -83,74 +150,9 @@
 .iconContainer {
     display: flex;
     align-items: center;
-}
 
-.iconContainer > img {
-    width: 100%;
-    height: auto;
-}
-
-/* 964px is being used instead of 768 */
-@media (max-width: 964px) {
-    .contentContainer {
-        justify-content: space-around;
-        gap: 65px 60px;
-        padding: 30px 30px 0;
-    }
-
-    .locationsSection,
-    .contactsSection {
-        margin-bottom: 0;
-    }
-
-    .locationsSection {
-        gap: 33px;
-    }
-}
-
-@media (max-width: 692px) {
-    .contentContainer {
-        gap: 40px;
-    }
-
-    .title {
-        text-align: center;
-    }
-
-    .contactsSection, 
-    .locationsSection {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .locationContainer {
+    & > img {
         width: 100%;
-        justify-content: flex-start;
-    }
-    
-    .contentContainer > img {
-        max-width: 300px;
         height: auto;
-    }
-}
-
-@media (max-width: 470px) {
-    .contentContainer {
-        padding: 30px 10px 0;
-        gap: 40px;
-    }
-
-    .contentContainer > img {
-        margin: 0 20px;
-    }
-
-    .title {
-        font-size: 25px;
-        line-height: 32px;
-    }
-
-    .descriptionText {
-        font-size: 20px;
-        line-height: 23px;
     }
 }

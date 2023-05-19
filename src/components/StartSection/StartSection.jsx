@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './StartSection.module.css';
+import classes from './StartSection.module.scss';
 import Header from '../Header/Header';
 import puppy from '../../assets/images/startPagePuppy.webp';
 

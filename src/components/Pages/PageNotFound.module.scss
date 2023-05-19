@@ -1,3 +1,5 @@
+@import '../styles/mediaMixin.scss';
+
 .pageContainer {
     display: flex;
     align-items: center;
@@ -6,12 +8,12 @@
     gap: 20px;
     padding: 0 10px;
     height: 100vh;
-}
 
-.pageContainer > img {
-    max-width: 450px;
-    width: 100%;
-    height: auto;
+    & > img {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .header {
@@ -19,6 +21,10 @@
     font-size: 32px;
     font-weight: 400;
     color: #4c4c4c;
+
+    @include mobiles {
+        font-size: 25px;
+    }
 }
 
 .link {
@@ -42,10 +48,4 @@
     background: #fddcc4;
     border-color: transparent;
     transition: 0.3s;
-}
-
-@media (max-width: 320px) {
-    .header {
-        font-size: 25px;
-    }
 }

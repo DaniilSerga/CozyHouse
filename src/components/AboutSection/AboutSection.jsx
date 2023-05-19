@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AboutSection.module.css';
+import classes from './AboutSection.module.scss';
 import dogPicture from '../../assets/images/aboutSectionPicture.webp';
 
 const AboutSection = () => {
