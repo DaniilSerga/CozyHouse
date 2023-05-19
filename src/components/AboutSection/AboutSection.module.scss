@@ -30,6 +30,7 @@
 }
 
 .title {
+    max-width: 370px;
     font-family: Georgia;
     font-size: 35px;
     font-weight: 400;
@@ -39,6 +40,7 @@
     color: #545454;
 
     @include mobiles {
+        max-width: 220px;
         font-size: 25px;
         line-height: 32px;
         letter-spacing: 0.06em;

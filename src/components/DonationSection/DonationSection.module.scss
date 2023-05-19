@@ -50,16 +50,13 @@
 }
 
 .header {
+    max-width: 300px;
     font-family: Georgia;
     font-size: 35px;
     font-weight: 400;
     line-height: 45px;
     letter-spacing: 0.06em;
     color: #545454;
-
-    @include tablets {
-        max-width: 300px;
-    }
 
     @include mobiles {
         text-align: center;

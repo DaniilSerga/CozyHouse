@@ -46,7 +46,9 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <img src={footerImg} alt='Footer section' />
+                    <div className={classes.imageContainer}>
+                        <img src={footerImg} alt='Footer section' />
+                    </div>
                 </div>
             </div>
         </div>
