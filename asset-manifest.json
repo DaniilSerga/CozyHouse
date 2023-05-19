@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CozyHouse/static/css/main.162422c0.css",
-    "main.js": "/CozyHouse/static/js/main.8bd66c28.js",
-    "static/css/523.45c02339.chunk.css": "/CozyHouse/static/css/523.45c02339.chunk.css",
-    "static/js/523.e29a396b.chunk.js": "/CozyHouse/static/js/523.e29a396b.chunk.js",
-    "static/css/290.fc2786a6.chunk.css": "/CozyHouse/static/css/290.fc2786a6.chunk.css",
-    "static/js/290.ca05f723.chunk.js": "/CozyHouse/static/js/290.ca05f723.chunk.js",
-    "static/css/303.e5ac57ac.chunk.css": "/CozyHouse/static/css/303.e5ac57ac.chunk.css",
-    "static/js/303.358730c4.chunk.js": "/CozyHouse/static/js/303.358730c4.chunk.js",
+    "main.css": "/CozyHouse/static/css/main.8c6bbc2f.css",
+    "main.js": "/CozyHouse/static/js/main.33e6ff33.js",
+    "static/css/757.ff94c9dd.chunk.css": "/CozyHouse/static/css/757.ff94c9dd.chunk.css",
+    "static/js/757.98bc2186.chunk.js": "/CozyHouse/static/js/757.98bc2186.chunk.js",
+    "static/css/675.a34671aa.chunk.css": "/CozyHouse/static/css/675.a34671aa.chunk.css",
+    "static/js/675.638c441b.chunk.js": "/CozyHouse/static/js/675.638c441b.chunk.js",
+    "static/css/320.ab97bd7b.chunk.css": "/CozyHouse/static/css/320.ab97bd7b.chunk.css",
+    "static/js/320.3062f0fe.chunk.js": "/CozyHouse/static/js/320.3062f0fe.chunk.js",
     "static/js/787.cb60dd18.chunk.js": "/CozyHouse/static/js/787.cb60dd18.chunk.js",
     "static/js/113.66f0e5e3.chunk.js": "/CozyHouse/static/js/113.66f0e5e3.chunk.js",
-    "static/js/666.7cbfe736.chunk.js": "/CozyHouse/static/js/666.7cbfe736.chunk.js",
+    "static/js/620.bf99aae4.chunk.js": "/CozyHouse/static/js/620.bf99aae4.chunk.js",
     "static/media/startPagePuppy.webp": "/CozyHouse/static/media/startPagePuppy.e0c35d5212418e2414ad.webp",
     "static/media/donationDog.webp": "/CozyHouse/static/media/donationDog.9ac50dcf157d7b568be7.webp",
     "static/media/aboutSectionPicture.webp": "/CozyHouse/static/media/aboutSectionPicture.1ab7e90587f5fa13d06b.webp",
@@ -47,20 +47,20 @@
     "static/media/closeIconLight.svg": "/CozyHouse/static/media/closeIconLight.cf132fb6ef1659119809a6a0e24d21a8.svg",
     "static/media/burgerIconLight.svg": "/CozyHouse/static/media/burgerIconLight.466481b1cb7fe5eda00834474eb10495.svg",
     "static/media/burgerIconDark.svg": "/CozyHouse/static/media/burgerIconDark.44a5dc7dc3033723a699a93b61d87e3c.svg",
-    "main.162422c0.css.map": "/CozyHouse/static/css/main.162422c0.css.map",
-    "main.8bd66c28.js.map": "/CozyHouse/static/js/main.8bd66c28.js.map",
-    "523.45c02339.chunk.css.map": "/CozyHouse/static/css/523.45c02339.chunk.css.map",
-    "523.e29a396b.chunk.js.map": "/CozyHouse/static/js/523.e29a396b.chunk.js.map",
-    "290.fc2786a6.chunk.css.map": "/CozyHouse/static/css/290.fc2786a6.chunk.css.map",
-    "290.ca05f723.chunk.js.map": "/CozyHouse/static/js/290.ca05f723.chunk.js.map",
-    "303.e5ac57ac.chunk.css.map": "/CozyHouse/static/css/303.e5ac57ac.chunk.css.map",
-    "303.358730c4.chunk.js.map": "/CozyHouse/static/js/303.358730c4.chunk.js.map",
+    "main.8c6bbc2f.css.map": "/CozyHouse/static/css/main.8c6bbc2f.css.map",
+    "main.33e6ff33.js.map": "/CozyHouse/static/js/main.33e6ff33.js.map",
+    "757.ff94c9dd.chunk.css.map": "/CozyHouse/static/css/757.ff94c9dd.chunk.css.map",
+    "757.98bc2186.chunk.js.map": "/CozyHouse/static/js/757.98bc2186.chunk.js.map",
+    "675.a34671aa.chunk.css.map": "/CozyHouse/static/css/675.a34671aa.chunk.css.map",
+    "675.638c441b.chunk.js.map": "/CozyHouse/static/js/675.638c441b.chunk.js.map",
+    "320.ab97bd7b.chunk.css.map": "/CozyHouse/static/css/320.ab97bd7b.chunk.css.map",
+    "320.3062f0fe.chunk.js.map": "/CozyHouse/static/js/320.3062f0fe.chunk.js.map",
     "787.cb60dd18.chunk.js.map": "/CozyHouse/static/js/787.cb60dd18.chunk.js.map",
     "113.66f0e5e3.chunk.js.map": "/CozyHouse/static/js/113.66f0e5e3.chunk.js.map",
-    "666.7cbfe736.chunk.js.map": "/CozyHouse/static/js/666.7cbfe736.chunk.js.map"
+    "620.bf99aae4.chunk.js.map": "/CozyHouse/static/js/620.bf99aae4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.162422c0.css",
-    "static/js/main.8bd66c28.js"
+    "static/css/main.8c6bbc2f.css",
+    "static/js/main.33e6ff33.js"
   ]
 }
