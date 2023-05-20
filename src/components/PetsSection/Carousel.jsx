@@ -16,9 +16,15 @@ const Carousel = ({petsList}) => {
         autoplay: true,
         autoplaySpeed: 4000,
         swipeToSlide: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         pauseOnHover: true,
         responsive: [
+          {
+            breakpoint: 1380,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
           {
             breakpoint: 1060,
             settings: {
@@ -26,7 +32,7 @@ const Carousel = ({petsList}) => {
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
             }

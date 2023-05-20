@@ -9,7 +9,6 @@ const AboutSection = () => {
                 <div className={classes.pictureContainer}>
                     <img src={dogPicture} alt='About section'/>
                 </div>
-
                 
                 <div className={classes.content}>
                     <h3 className={classes.title}>About the shelter “Cozy House”</h3>

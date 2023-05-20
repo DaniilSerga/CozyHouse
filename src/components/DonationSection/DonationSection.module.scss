@@ -121,6 +121,8 @@
 }
 
 .imageContainer {
+    max-width: 505px;
+
     & > img {
         width: 100%;
         height: auto;
@@ -132,6 +134,7 @@
 
     @include mobiles {
         order: 2;
+        max-width: 260px;
         margin: 0 20px;
 
         & > img {

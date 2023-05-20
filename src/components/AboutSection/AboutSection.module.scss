@@ -54,6 +54,13 @@
     max-width: 430px;
     gap: 25px;
 
+    & > p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 24px;
+        color: #4c4c4c;
+    }
+
     @include tablets {
         order: 1;
     }
@@ -74,19 +81,12 @@
     }
 }
 
-.content > p {
-    font-size: 15px;
-    text-align: left;
-    line-height: 24px;
-    color: #4c4c4c;
-}
-
-.pictureContainer > img {
-    max-width: 100%;
-    height: auto;
-}
-
 .pictureContainer {
+    & > img {
+        max-width: 100%;
+        height: auto;
+    }
+    
     @include tablets {
         order: 2;
     }
