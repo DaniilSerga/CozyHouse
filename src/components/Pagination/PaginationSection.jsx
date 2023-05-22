@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import classes from './PaginationSection.module.scss';
 import petsList from '../../constants/petsList';
 import PetCard from '../Cards/PetCard';
-import ReactPaginate from "react-paginate";
+import ReactPaginate from 'react-paginate';
 
 const Pagination = () => {
     const [currentPage, setCurrentPage] = useState(0);

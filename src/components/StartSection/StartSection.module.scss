@@ -13,14 +13,14 @@
 .contentContainer {
     display: flex;
     justify-content: space-between;
-    gap: 42px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 42px;
     padding: 30px 40px 0;
     animation: fadeIn 1s;
 
     & > img {
-        width: 100%;
+        max-width: 698px;
         height: auto;
     }
 

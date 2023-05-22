@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './PetsSection.module.scss';
 import petsList from '../../constants/petsList';
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom';
 
 const PetsSection = () => {
     return(
@@ -14,7 +15,7 @@ const PetsSection = () => {
                     <Carousel petsList={petsList}></Carousel>
                 }
             </div>
-            <button className={classes.footerButton}>Get to know the rest</button>
+            <Link to={'/CozyHouse/pets'} className={classes.footerButton}>Get to know the rest</Link>
         </div>
     )
 }
