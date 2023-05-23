@@ -92,5 +92,9 @@
 
     @include mobiles {
         margin: 42px 5px 0;
+
+        & > img {
+            max-width: 260px;
+        }
     }
 }

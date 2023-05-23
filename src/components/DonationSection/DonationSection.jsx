@@ -5,15 +5,19 @@ import creditCardImage from '../../assets/icons/creditCard.svg';
 
 const DonationSection = () => {
     const [isNotificationDisplayed, setNotificationDisplaying] = useState(false);
+    const [notificationTimeoutId, setNotificationTimeoutId] = useState(0);
     const creditCard = useRef(null);
 
     const handleCopying = () => {
+        clearTimeout(notificationTimeoutId);
+        setNotificationDisplaying(false);
+
         navigator.clipboard.writeText(creditCard.current.textContent)
             .then(() => {   
                 setNotificationDisplaying(true);
-                setTimeout(() => {
+                setNotificationTimeoutId(setTimeout(() => {
                     setNotificationDisplaying(false);
-                }, 3000);
+                }, 3000));
             }, () => {
                 alert('Some error occured while copying, try again later');
             })

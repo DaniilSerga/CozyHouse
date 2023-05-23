@@ -31,8 +31,9 @@
     color: #545454;
 
     @include mobiles {
-        max-width: 220px;
+        max-width: 230px;
         font-size: 25px;
+        line-height: 32px;
     }
 }
 
@@ -77,7 +78,7 @@
     }
 
     @include mobiles {
-        width: 130px;
+        width: 270px;
 
         & > figcaption {
             font-size: 15px;

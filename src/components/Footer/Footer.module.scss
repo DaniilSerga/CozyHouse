@@ -21,39 +21,39 @@
     margin: 0 auto;
     padding: 40px 40px 0 40px;
 
-    & .imageContainer {
-        display: flex;
-        align-items: flex-end;
-
-        & > img {
-            max-width: 300px;
-            height: auto;
-        }
-    }
-
     @include tablets {
         justify-content: space-around;
         gap: 65px 60px;
         padding: 30px 30px 0;
-
-        & > .imageContainer {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            & > img {
-                max-width: 300px;
-                height: auto;
-            }
-        }
     }
 
     @include mobiles {
         padding: 30px 10px 0;
         gap: 40px;
+    }
+}
 
-        & > .imageContainer {
-            margin: 0 20px;
+.imageContainer {
+    display: flex;
+    align-items: flex-end;
+
+    & > img {
+        max-width: 300px;
+        max-height: 310px;
+        height: auto;
+    }
+
+    @include tablets {
+        justify-content: center;
+        width: 100%;
+    }
+
+    @include mobiles {
+        margin: 0 20px;
+
+        & > img {
+            max-width: 260px;
+            max-height: 269px;
         }
     }
 }
