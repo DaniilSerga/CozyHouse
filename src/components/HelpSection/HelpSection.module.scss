@@ -64,7 +64,7 @@
     align-items: center;
     gap: 30px;
 
-    & > p {
+    & > figcaption {
         font-family: Georgia;
         font-size: 20px;
         font-weight: 400;
@@ -79,7 +79,7 @@
     @include mobiles {
         width: 130px;
 
-        & > p {
+        & > figcaption {
             font-size: 15px;
         }
     }

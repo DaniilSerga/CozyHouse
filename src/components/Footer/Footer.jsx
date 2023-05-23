@@ -7,7 +7,7 @@ import mailIcon from '../../assets/icons/mailIcon.svg';
 
 const Footer = () => {
     return (
-        <div className={classes.footerContainer}>
+        <footer className={classes.footerContainer}>
             <div className={classes.footerWrapper}>
                 <div className={classes.contentContainer}>
                     <div className={classes.contactsSection}>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

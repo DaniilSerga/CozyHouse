@@ -22,12 +22,12 @@ const Navbar = ({lightStyles, menuActive}) => {
     }, [menuActive])
 
     return(
-        <div className={style}>
+        <nav className={style}>
             <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/'}>About the shelter</NavLink> 
             <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/pets'}>Our pets</NavLink> 
             <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/help'}>Help the shelter</NavLink> 
             <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/contacts'}>Contacts</NavLink> 
-        </div>
+        </nav>
     )
 }
 

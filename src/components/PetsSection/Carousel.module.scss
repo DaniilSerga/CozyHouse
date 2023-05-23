@@ -38,11 +38,11 @@
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     overflow: hidden;
+    transition: border-color, background-color 0.2s linear;
 
     &:hover {
         background-color: #fddcc4;
         border-color: #fddcc4;
-        transition: 0.3s;
     }
 }
 

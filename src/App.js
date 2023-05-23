@@ -8,15 +8,15 @@ const StartPage = WithSuspense(lazy(() => import('./components/Pages/StartPage')
 const PetsPage = WithSuspense(lazy(() => import('./components/Pages/PetsPage')));
 
 const App = () => {
-  return (
-    <div className={classes.app}>
-          <Routes>
-            <Route path='/CozyHouse/' element={<StartPage/>}/>
-            <Route path='/CozyHouse/pets' element={<PetsPage/>}/>
-            <Route path='*' element={<PageNotFound/>}/>
-          </Routes>
-    </div>
-  );
+    return (
+        <main className={classes.app}>
+            <Routes>
+                <Route path='/CozyHouse/' element={<StartPage />} />
+                <Route path='/CozyHouse/pets' element={<PetsPage />} />
+                <Route path='*' element={<PageNotFound />} />
+            </Routes>
+        </main>
+    );
 }
 
 export default App;

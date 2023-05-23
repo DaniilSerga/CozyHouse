@@ -79,12 +79,17 @@
     border: 1px solid #f1cdb3;
     border-radius: 100px;
     background: transparent;
+    transition: background-color 0.2s linear;
 }
 
+.paginationButton:not(.disabledLink > a) {
+    cursor: pointer;
+}
 .paginationWrapper > .paginationButton {
     width: 52px;
     height: 52px;
     text-align: center;
+    transition: background-color 0.2s linear;
 }
 
 .pageContainer {
@@ -113,5 +118,4 @@
 .paginationButton:hover {
     border-color: #fddcc4;
     background-color: #fddcc4;
-    transition: 0.3s;
 }

@@ -82,20 +82,17 @@
 }
 
 .creditCard {
+    cursor: pointer;
     display: flex;
     padding: 10px 15px;
     width: fit-content;
     gap: 15px;
     background-color: #f1cdb3;
     border-radius: 9px;
+    transition: background-color 0.2s ease-out;
 
-    & > p {
-        font-family: Georgia;
-        font-size: 20px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.06em;
-        color: #545454;
+    &:hover {
+        background-color: #fddcc4;
     }
 
     @include mobiles {
@@ -105,6 +102,15 @@
             font-size: 15px;
         }
     }
+}
+
+.creditCardNumber {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    color: #545454;
 }
 
 .legalInfo {
@@ -141,5 +147,48 @@
             max-width: 100%;
             height: auto;
         }
+    }
+}
+
+.notificationWrapper {
+    position: fixed;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    & > p {
+        padding: 10px 30px;
+        font-family: Georgia;
+        font-size: 15px;
+        letter-spacing: .06em;
+        color: #000;
+        background-color: #F1cdb3;
+        border-color: #000;
+        border-radius: 25px 25px 0 0;
+    }
+
+    @include mobiles {
+        & > p {
+            font-size: 12px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        bottom: -39px;
+    }
+    40% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 0;
     }
 }

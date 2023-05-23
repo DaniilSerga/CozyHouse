@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const PetsSection = () => {
     return(
-        <div className={classes.petsSection}>
+        <section className={classes.petsSection}>
             <div className={classes.header}>
                 <h3 className={classes.title}>Our friends who <br/> are looking for a house</h3>
             </div>
@@ -16,7 +16,7 @@ const PetsSection = () => {
                 }
             </div>
             <Link to={'/CozyHouse/pets'} className={classes.footerButton}>Get to know the rest</Link>
-        </div>
+        </section>
     )
 }
 

@@ -6,13 +6,13 @@ import Pagination from '../Pagination/PaginationSection';
 
 const PetsPage = () => {
     return (
-        <div className={classes.petsPageContainer}>
+        <>
             <Header lightStyles/>
-            <div className={classes.content}>
+            <section className={classes.content}>
                 <Pagination/>
-            </div>
+            </section>
             <Footer/>
-        </div>
+        </>
     )
 }
 

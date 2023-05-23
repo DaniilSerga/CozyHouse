@@ -31,10 +31,10 @@
     
     & > a {
         color: #cdcdcd;
+        transition: color 0.2s ease-in;
 
         &:hover {
             color: #fafafa;
-            transition: 0.3s; 
         }
     }
 
@@ -51,10 +51,10 @@
 
     & > a {
         color: #545454;
-
+        transition: color 0.2s ease-in;
+        
         &:hover {
             color: #292929;
-            transition: 0.3s;
         }
     }
 
