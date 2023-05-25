@@ -100,14 +100,14 @@
     right: 53px;
     width: 30px;
     height: 30px;
-    animation: rotate;
+    animation: leftToRight;
     animation-duration: 0.6s;
     animation-timing-function: ease;
     animation-direction: alternate, reverse, normal;;
     animation-fill-mode: forwards;
 }
 
-@keyframes rotate {
+@keyframes leftToRight {
     0% {
         right: 100%;
     }
