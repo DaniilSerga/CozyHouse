@@ -18,7 +18,7 @@ const Header = ({ lightStyles }) => {
             </Link>
             <Navbar setMenuActive={setMenuActive} menuActive={menuActive} lightStyles={lightStyles} />
             <div onClick={() => setMenuActive(!menuActive)} className={classes.menuButtonSection}>
-                {menuActive ?
+                { menuActive ?
                     <img className={classes.closeImg} src={lightStyles ? crossDark : crossLight} alt='close menu' /> :
                     <img src={lightStyles ? burgerDark : burgerLight} alt='menu' />
                 }
