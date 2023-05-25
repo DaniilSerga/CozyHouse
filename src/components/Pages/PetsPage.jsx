@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './PetsPage.module.scss';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import Pagination from '../Pagination/PaginationSection';
+import { useOutletContext } from 'react-router-dom';
 
 const PetsPage = () => {
+    const [, setIsLight] = useOutletContext();
+
+    useEffect(() => {
+        setIsLight(true);
+    })
+
     return (
         <>
-            <Header lightStyles/>
             <section className={classes.content}>
                 <Pagination/>
             </section>
-            <Footer/>
         </>
     )
 }

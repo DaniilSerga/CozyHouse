@@ -1,13 +1,11 @@
 import React from 'react';
 import classes from './StartSection.module.scss';
-import Header from '../Header/Header';
 import puppy from '../../assets/images/startPagePuppy.webp';
 
 const StartSection = () => {
     return(
         <section className={classes.startScreenContainer}>
             <div className={classes.contentWrapper}>
-                <Header/>
                 <div className={classes.contentContainer}>
                     <article className={classes.content}>
                         <h3>Not only people need a house</h3>

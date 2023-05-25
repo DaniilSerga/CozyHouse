@@ -8,7 +8,7 @@ import crossLight from '../../assets/icons/closeIconLight.svg'
 import { Link } from 'react-router-dom';
 
 const Header = ({ lightStyles }) => {
-    const [menuActive, showMenu] = useState(false);
+    const [menuActive, setMenuActive] = useState(false);
 
     return (
         <header className={lightStyles ? classes.headerContainerLight : classes.headerContainerDark}>
@@ -16,8 +16,8 @@ const Header = ({ lightStyles }) => {
                 <h1 className={lightStyles ? classes.titleLight : classes.titleDark}>Cozy House</h1>
                 <h2 className={lightStyles ? classes.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h2>
             </Link>
-            <Navbar menuActive={menuActive} lightStyles={lightStyles} />
-            <div onClick={() => showMenu(!menuActive)} className={classes.menuButtonSection}>
+            <Navbar setMenuActive={setMenuActive} menuActive={menuActive} lightStyles={lightStyles} />
+            <div onClick={() => setMenuActive(!menuActive)} className={classes.menuButtonSection}>
                 {menuActive ?
                     <img className={classes.closeImg} src={lightStyles ? crossDark : crossLight} alt='close menu' /> :
                     <img src={lightStyles ? burgerDark : burgerLight} alt='menu' />

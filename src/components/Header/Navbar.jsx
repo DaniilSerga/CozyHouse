@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import classes from './Navbar.module.scss';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = ({lightStyles, menuActive}) => {
+const Navbar = ({lightStyles, menuActive, setMenuActive}) => {
     const [style, setStyle] = useState(classes.navbarContainerDark);
-    
+
     useEffect(() => {
         if (menuActive) {
             setStyle(
@@ -19,14 +19,34 @@ const Navbar = ({lightStyles, menuActive}) => {
                     classes.navbarContainerDark
             )
         }
-    }, [menuActive])
+    }, [menuActive, lightStyles])
 
     return(
         <nav className={style}>
-            <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/'}>About the shelter</NavLink> 
-            <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/pets'}>Our pets</NavLink> 
-            <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/help'}>Help the shelter</NavLink> 
-            <NavLink className={({isActive}) => isActive ? classes.activeLink : classes.link} to={'/CozyHouse/contacts'}>Contacts</NavLink> 
+            <NavLink 
+                to={'/CozyHouse/'} 
+                onClick={() => setMenuActive(!menuActive)}
+                className={({isActive}) => isActive ? classes.activeLink : classes.link}>
+                    About the shelter
+            </NavLink> 
+            <NavLink 
+                to={'/CozyHouse/pets'} 
+                onClick={() => setMenuActive(!menuActive)}
+                className={({isActive}) => isActive ? classes.activeLink : classes.link}>
+                    Our pets
+            </NavLink> 
+            <NavLink 
+                to={'/CozyHouse/help'} 
+                onClick={() => setMenuActive(!menuActive)}
+                className={({isActive}) => isActive ? classes.activeLink : classes.link}>
+                    Help the shelter
+            </NavLink> 
+            <NavLink 
+                to={'/CozyHouse/contacts'} 
+                onClick={() => setMenuActive(!menuActive)}
+                className={({isActive}) => isActive ? classes.activeLink : classes.link}>
+                    Contacts
+            </NavLink> 
         </nav>
     )
 }

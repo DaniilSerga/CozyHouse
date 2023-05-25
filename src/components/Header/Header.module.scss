@@ -1,19 +1,37 @@
 @import '../styles/mediaMixin.scss';
 
-.headerContainerLight,
-.headerContainerDark {
+.headerContainerLight {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 40px 30px;
-
+    margin: 30px 40px;
+    
     @include tablets {
         margin: 30px;
     }
 
     @include mobiles {
-        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+}
+
+// TODO Replace 'right' and 'left' properties with smth
+.headerContainerDark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+    
+    @include tablets {
+        margin: 30px;
+    }
+
+    @include mobiles {
         margin: 0;
         padding: 30px 50px 30px 10px;
     }
