@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/CozyHouse/static/css/main.8c6bbc2f.css",
-    "main.js": "/CozyHouse/static/js/main.7d5d00ac.js",
-    "static/css/757.ff94c9dd.chunk.css": "/CozyHouse/static/css/757.ff94c9dd.chunk.css",
+    "main.css": "/CozyHouse/static/css/main.6505dfbb.css",
+    "main.js": "/CozyHouse/static/js/main.93841dcc.js",
+    "static/css/757.59cb1787.chunk.css": "/CozyHouse/static/css/757.59cb1787.chunk.css",
     "static/js/757.1a2981a4.chunk.js": "/CozyHouse/static/js/757.1a2981a4.chunk.js",
-    "static/css/687.764da986.chunk.css": "/CozyHouse/static/css/687.764da986.chunk.css",
-    "static/js/687.21907a79.chunk.js": "/CozyHouse/static/js/687.21907a79.chunk.js",
-    "static/css/320.4ed633e8.chunk.css": "/CozyHouse/static/css/320.4ed633e8.chunk.css",
-    "static/js/320.c5b40aad.chunk.js": "/CozyHouse/static/js/320.c5b40aad.chunk.js",
+    "static/css/382.6e3e8c8c.chunk.css": "/CozyHouse/static/css/382.6e3e8c8c.chunk.css",
+    "static/js/382.9efed573.chunk.js": "/CozyHouse/static/js/382.9efed573.chunk.js",
+    "static/css/350.46a291aa.chunk.css": "/CozyHouse/static/css/350.46a291aa.chunk.css",
+    "static/js/350.a5eeb898.chunk.js": "/CozyHouse/static/js/350.a5eeb898.chunk.js",
     "static/js/787.cb60dd18.chunk.js": "/CozyHouse/static/js/787.cb60dd18.chunk.js",
     "static/js/113.66f0e5e3.chunk.js": "/CozyHouse/static/js/113.66f0e5e3.chunk.js",
-    "static/js/620.befa7579.chunk.js": "/CozyHouse/static/js/620.befa7579.chunk.js",
     "static/media/startPagePuppy.webp": "/CozyHouse/static/media/startPagePuppy.e0c35d5212418e2414ad.webp",
     "static/media/donationDog.webp": "/CozyHouse/static/media/donationDog.9ac50dcf157d7b568be7.webp",
     "static/media/aboutSectionPicture.webp": "/CozyHouse/static/media/aboutSectionPicture.1ab7e90587f5fa13d06b.webp",
@@ -48,20 +47,19 @@
     "static/media/burgerIconLight.svg": "/CozyHouse/static/media/burgerIconLight.466481b1cb7fe5eda00834474eb10495.svg",
     "static/media/burgerIconDark.svg": "/CozyHouse/static/media/burgerIconDark.44a5dc7dc3033723a699a93b61d87e3c.svg",
     "static/media/arrow.svg": "/CozyHouse/static/media/arrow.598f3c03b8a07625e96db92e61033951.svg",
-    "main.8c6bbc2f.css.map": "/CozyHouse/static/css/main.8c6bbc2f.css.map",
-    "main.7d5d00ac.js.map": "/CozyHouse/static/js/main.7d5d00ac.js.map",
-    "757.ff94c9dd.chunk.css.map": "/CozyHouse/static/css/757.ff94c9dd.chunk.css.map",
+    "main.6505dfbb.css.map": "/CozyHouse/static/css/main.6505dfbb.css.map",
+    "main.93841dcc.js.map": "/CozyHouse/static/js/main.93841dcc.js.map",
+    "757.59cb1787.chunk.css.map": "/CozyHouse/static/css/757.59cb1787.chunk.css.map",
     "757.1a2981a4.chunk.js.map": "/CozyHouse/static/js/757.1a2981a4.chunk.js.map",
-    "687.764da986.chunk.css.map": "/CozyHouse/static/css/687.764da986.chunk.css.map",
-    "687.21907a79.chunk.js.map": "/CozyHouse/static/js/687.21907a79.chunk.js.map",
-    "320.4ed633e8.chunk.css.map": "/CozyHouse/static/css/320.4ed633e8.chunk.css.map",
-    "320.c5b40aad.chunk.js.map": "/CozyHouse/static/js/320.c5b40aad.chunk.js.map",
+    "382.6e3e8c8c.chunk.css.map": "/CozyHouse/static/css/382.6e3e8c8c.chunk.css.map",
+    "382.9efed573.chunk.js.map": "/CozyHouse/static/js/382.9efed573.chunk.js.map",
+    "350.46a291aa.chunk.css.map": "/CozyHouse/static/css/350.46a291aa.chunk.css.map",
+    "350.a5eeb898.chunk.js.map": "/CozyHouse/static/js/350.a5eeb898.chunk.js.map",
     "787.cb60dd18.chunk.js.map": "/CozyHouse/static/js/787.cb60dd18.chunk.js.map",
-    "113.66f0e5e3.chunk.js.map": "/CozyHouse/static/js/113.66f0e5e3.chunk.js.map",
-    "620.befa7579.chunk.js.map": "/CozyHouse/static/js/620.befa7579.chunk.js.map"
+    "113.66f0e5e3.chunk.js.map": "/CozyHouse/static/js/113.66f0e5e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c6bbc2f.css",
-    "static/js/main.7d5d00ac.js"
+    "static/css/main.6505dfbb.css",
+    "static/js/main.93841dcc.js"
   ]
 }
