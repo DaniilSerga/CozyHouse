@@ -8,7 +8,6 @@ const Dashboard = () => {
 
     return(
         <>
-            {/* Implement correct way to display header on different pages */}
             <Header lightStyles={isLight}/>
             
             <main>
