@@ -13,8 +13,8 @@ const Header = ({ lightStyles }) => {
     return (
         <header className={lightStyles ? classes.headerContainerLight : classes.headerContainerDark}>
             <Link to={'/CozyHouse/'} className={classes.titleContainer}>
-                <h1 className={lightStyles ? classes.titleLight : classes.titleDark}>Cozy House</h1>
-                <h2 className={lightStyles ? classes.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h2>
+                <h2 className={lightStyles ? classes.titleLight : classes.titleDark}>Cozy House</h2>
+                <h3 className={lightStyles ? classes.subtitleLight : classes.subtitleDark}>Shelter for pets in Boston</h3>
             </Link>
             <Navbar setMenuActive={setMenuActive} menuActive={menuActive} lightStyles={lightStyles} />
             <div onClick={() => setMenuActive(!menuActive)} className={classes.menuButtonSection}>

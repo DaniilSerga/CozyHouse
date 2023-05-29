@@ -8,7 +8,7 @@ const PageNotFound = () => {
 
     useEffect(() => {
         setIsLight(true);
-    })
+    }, [])
 
     return (
         <section className={classes.pageContainer}>

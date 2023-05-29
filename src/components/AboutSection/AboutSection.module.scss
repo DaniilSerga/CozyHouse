@@ -1,7 +1,7 @@
 @import '../styles/mediaMixin.scss';
 
 .aboutSectionContainer {
-    padding: 80px 40px 100px 40px;
+    padding: 80px 40px 100px;
 
     @include tablets {
         padding: 80px 165px 100px;
@@ -34,7 +34,7 @@
     font-size: 35px;
     font-weight: 400;
     text-align: left;
-    line-height: 45.5px;
+    line-height: 45px;
     letter-spacing: 0.06em;
     color: #545454;
 

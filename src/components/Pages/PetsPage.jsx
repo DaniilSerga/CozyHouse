@@ -8,14 +8,12 @@ const PetsPage = () => {
 
     useEffect(() => {
         setIsLight(true);
-    })
+    }, [])
 
     return (
-        <>
-            <section className={classes.content}>
-                <Pagination/>
-            </section>
-        </>
+        <section className={classes.content}>
+            <Pagination />
+        </section>
     )
 }
 

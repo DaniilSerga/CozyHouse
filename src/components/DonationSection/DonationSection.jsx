@@ -11,7 +11,6 @@ const DonationSection = () => {
     const handleCopying = () => {
         clearTimeout(notificationTimeoutId);
         setNotificationDisplaying(false);
-
         navigator.clipboard.writeText(creditCard.current.textContent)
             .then(() => {   
                 setNotificationDisplaying(true);

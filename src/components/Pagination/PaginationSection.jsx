@@ -3,6 +3,7 @@ import classes from './PaginationSection.module.scss';
 import petsList from '../../constants/petsList';
 import PetCard from '../Cards/PetCard';
 import ReactPaginate from 'react-paginate';
+import resolutions from '../../constants/resolutions';
 
 const Pagination = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -20,9 +21,9 @@ const Pagination = () => {
 
     useEffect(() => {
         const getItemsPerPageAmount = () => {
-            if (window.innerWidth >= 1280) {
+            if (window.innerWidth >= resolutions.tablets) {
                 return 8;
-            } else if (window.innerWidth >= 768) {
+            } else if (window.innerWidth >= resolutions.mobiles) {
                 return 6;
             } else {
                 return 3;
@@ -96,7 +97,7 @@ const Pagination = () => {
 
     return (
         <div className={classes.carouselContainer}>
-            <h3 className={classes.title}>Our friends who <br /> are looking for a house</h3>
+            <h3 className={classes.title}>Our friends who <br/> are looking for a house</h3>
             <div className={classes.itemsContainer}>
                 {
                     displayedPets.map(pet => {
