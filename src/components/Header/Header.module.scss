@@ -1,0 +1,116 @@
+@import '../styles/mediaMixin.scss';
+
+.headerContainerLight {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+    
+    @include tablets {
+        margin: 30px;
+    }
+
+    @include mobiles {
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+}
+
+.headerContainerDark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+    
+    @include tablets {
+        margin: 30px;
+    }
+
+    @include mobiles {
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.titleLight {
+    margin: 0;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.titleDark {
+    margin: 0;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #F1CDB3;
+}
+
+.subtitleDark {
+    margin: 0;
+    font-family: 'Arial';
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.3px;
+    color: #fff;
+}
+
+.subtitleLight {
+    margin: 0;
+    font-family: 'Arial';
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.3px;
+    color: #292929;
+}
+
+.menuButtonSection {
+    z-index: 1;
+    display: none;
+    margin-right: 3px;
+
+    @include mobiles {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.closeImg {
+    position: fixed;
+    right: 53px;
+    width: 30px;
+    height: 30px;
+    animation: leftToRight;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-direction: alternate, reverse, normal;;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftToRight {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 53px;
+    }
+}

@@ -1,0 +1,61 @@
+@import '../styles/mediaMixin.scss';
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+
+    @include mobiles {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 80px;
+    }
+}
+
+.slickSlider {
+    width: 90%;
+
+    @include mobiles {
+        width: 100%;
+    }
+}
+
+.listItemWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.prevButton,
+.nextButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: border-color, background-color 0.2s linear;
+
+    &:hover {
+        background-color: #fddcc4;
+        border-color: #fddcc4;
+    }
+}
+
+.prevButton > img {
+    transform: rotate(180deg);
+}
+
+@include mobiles {
+    .prevButton {
+        order: 2;
+    }
+
+    .nextButton {
+        order: 3;
+    }
+}

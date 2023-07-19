@@ -1,0 +1,45 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 270px;
+    max-height: 435px;
+    padding-bottom: 30px;
+    border-radius: 9px;
+    background-color: #fafafa;
+    transition: background-color 0.2s ease-in;
+}
+
+.cardContainer:hover {
+    background-color:#fff;
+}
+
+.cardContainer > p {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #545454;
+}
+
+.learnMoreButton {
+    cursor: pointer;
+    padding: 15px 45px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #292929;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+    transition: border-color, background-color 0.2s linear;
+}
+
+.learnMoreButton:hover {
+    border-color: #fddcc4;
+    background-color: #fddcc4;
+}
